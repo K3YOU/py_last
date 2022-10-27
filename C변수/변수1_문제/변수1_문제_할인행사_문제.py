@@ -16,4 +16,13 @@ dis_snack_amo = 3
 dis_snack_money = 200
 
 
+'''
+10000 - 1200*6 -200*(6 //3)
+
+
+'''
+change = money -snack*snack_amo + (snack_amo//dis_snack_amo)*dis_snack_money
+
+print(change)
+
 
