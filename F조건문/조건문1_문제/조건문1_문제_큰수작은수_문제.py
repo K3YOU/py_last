@@ -13,21 +13,17 @@
 '''
 
 
-
 import random
 
 a = random.randint(1,5)
 b = random.randint(6,10)
 
-#print(a,b)
+print(a,b)
 
-num1 = random.randint(1,2)
+c = random.randint(1,2)
 
+if c == 1 :
+    print(a, b)
 
-if num1 == 1:
-    print(a,b)
-
-if num1 == 2:
-    print(b,a)
-
-
+if c == 2 :
+    print(b,a)    

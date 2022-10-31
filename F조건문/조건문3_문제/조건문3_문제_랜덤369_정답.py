@@ -15,9 +15,10 @@
 
 import random
 
-num = random.randint(1, 99)
-print(num)
+#num = random.randint(1, 99)
+#print(num)
 
+num =30
 x = num // 10
 y = num % 10
 

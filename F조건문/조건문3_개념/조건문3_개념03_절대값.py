@@ -14,5 +14,5 @@ print(a, " ", b, " ", c)
 
 
 if c < 0:
-    c = c * -1
+    c = c * -1   # c = -c 
 print(a, " ", b, " ", c)

@@ -16,7 +16,7 @@ print(a)
 
 unit = a // 5
 if a % 5 == 0:
-    unit -= 1
+    unit -= 1 #unit = unit -1
 
 unit = unit * 5 + 1
 print(unit)

@@ -25,7 +25,7 @@ z = num % 10
 print(x, y, z)
 
 result = 0
-if (x % 2 == 0 and y % 2 == 0) or (y % 2 == 0 and z % 2 == 0):
+if (x % 2 == 0 and y % 2 == 0) or (y % 2 == 0 and z % 2 == 0):  #x랑 y가 짝수일 때 z는 안 적느냐? 네! 왜냐면 z 조건은 or 뒤에 나오니깐!
     result = 2
 if x % 2 == 0 and y % 2 == 0 and z % 2 == 0:
     result = 1

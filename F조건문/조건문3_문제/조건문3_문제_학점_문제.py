@@ -14,3 +14,26 @@
             82 ==> B
             23 ==> 재시험
 '''
+
+import random
+
+a = random.randint(0,100)
+print(a)
+
+b = a % 10 
+
+if a >=98 :
+    print("a+")
+
+if 91 <= a < 98 :
+    print(a)
+
+if 88<= a <= 90 :
+    print("b+")
+
+if 81 <= a <= 87 :
+    print(b)
+
+if a <= 80:
+    print("재시험")
+

@@ -52,6 +52,20 @@ if score <= 80:
 
 print("------------------------------")
 
+
+one = score % 10
+if score == 100:
+    print("a+")
+
+if 91 <= score and score <= 99 :
+    if one >= 8:
+        print("a+")
+    if one < 8 :
+        print("a")
+        
+               
+
+'''
 one = score % 10        # 일의 자리 구하기
 if score == 100:
     print("A+")
@@ -67,3 +81,4 @@ if 81 <= score and score <= 90:
         print("B")
 if 0 <= score and score <= 80:
     print("재시험")
+'''    

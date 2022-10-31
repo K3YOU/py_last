@@ -23,3 +23,105 @@
 
     [4] 20 이상의 값이 나오면 "승리"를 출력한다.
 '''	
+
+import random
+
+cur_location = 9
+print("start point", cur_location)
+
+dice1 = random.randint(1,6)
+dice2 = random.randint(1,6)
+print(dice1,dice2)
+
+sum = dice1+dice2
+
+## 선생님 풀이랑 다른 점! 나는 if 두개로 나눠서 푸는게 편하다!!
+#dice1 != dice2
+if dice1 != dice2:
+    cur_location = 9 + sum
+    print("diff",cur_location)
+    
+
+#dice1 == dice2
+if dice1 == dice2:
+    cur_location += 6
+    print("same", cur_location)
+
+#14,15,16
+if cur_location == 14 or cur_location == 15 or cur_location == 16 :
+    print("trap")
+    dice1 = random.randint(1,6)
+    dice2 = random.randint(1,6)
+    print(dice1,dice2)
+    
+    sum = dice1+dice2
+    ##under 6
+    if sum <= 6:
+        cur_location = 0
+        print(cur_location)
+
+    ##above 7
+    if sum >= 7 :
+        cur_location = 17
+        print(cur_location)
+
+# above 20
+if cur_location >= 20:
+    print("승리")     
+
+
+
+
+
+
+
+'''
+cur_location = 9
+print("게임시작위치", cur_location)
+
+dice1 = random.randint(1,6)
+dice2 = random.randint(1,6)
+print("주사위들 : ", dice1,dice2)
+
+
+#주사위 숫자가 다를 경우
+sum = dice1+ dice2                    #이렇게 먼저 선언해주면 주사위 숫자가 같은 경우만 따로 밑에 적어두면 된다!
+cur_location = cur_location +sum
+print("숫자달라",cur_location)
+
+[오답]
+dice1 != dice2:
+    sum = dice1+dice2
+    cur_location = 9 + sum
+    print(cur_location)
+
+#주사위 위치가 같은 경우
+if dice1 == dice2 :
+    sum += 6
+    cur_location = 9 + sum
+    print("숫자같아", cur_location)
+
+
+#14,15,16에 걸릴 경우 
+##중첩if문 :
+if cur_location == 14 or cur_location == 15 or cur_location == 16 :
+    print("함정에빠짐")
+    dice1 = random.randint(1,6)       #여기서 다시 주사위 던지는거라 재정의
+    dice2 = random.randint(1,6)
+    print("함정주사위", dice1,dice2)
+
+### 1) 6이하일 경우 
+    if sum <= 6 :
+        cur_location = 0 
+        print("패널티", cur_location)
+
+### 2) 7이상일 경우
+    if sum >= 7 :
+        cur_location = 17 
+        print("패널티없음", cur_location)
+
+
+# 20 이상의 값이 나올 경우
+if cur_location >= 20 :
+    print("승리")
+'''

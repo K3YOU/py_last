@@ -12,3 +12,31 @@
 		16	==> 짝
 		 7	==> 7
 '''
+
+import random
+
+a = random.randint(1,99)
+print(a)
+
+
+#a = 30
+b = a // 10
+c = a % 10
+
+
+#count = 2
+if b % 3 == 0 and c % 3 == 0 :
+	print("짝짝")
+
+#count = 1
+if b % 3 != 0 and c % 3 == 0 :
+	print("짝")
+
+if b % 3 == 0 and c % 3 != 0 :
+	print("짝")
+
+#count = 0
+if b % 3 != 0 and c % 3 != 0 :
+	print(a)
+	
+	

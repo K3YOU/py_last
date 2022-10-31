@@ -21,6 +21,8 @@ if c > a and c > b:
 print("-----------------")
 
 max = a   # max =a 를 써줘야하는 이유! a가 b보다 큰 경우 첫 if 절은 넘어가고 두번째 if절부터 시작
+#변수를 추가적으로 더 쓰기!!!
+
 if max < b:
     max = b
 if max < c: 
@@ -28,7 +30,6 @@ if max < c:
 
 print(a , " ", b, " ", c)
 print("가장 큰 값 : ", max)
-
 
 
 
