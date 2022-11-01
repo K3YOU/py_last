@@ -50,7 +50,7 @@ print(거스름돈2)
 """
 import random
 a = random.randint(1,16)
-#print(a)
+print(a)
 
 unit = a // 4
 
