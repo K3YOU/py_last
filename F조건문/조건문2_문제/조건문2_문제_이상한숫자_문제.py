@@ -15,11 +15,12 @@ import random
 a = random.randint(1,100)
 print(a)
 
-if a % 5 == 0:
-	b = a //5 + 4*((a//5)-1)
-	print(b)
+#set an unit
+unit = a //5
 
-if a % 5 != 0:
-	b = 5*(a//5)+ 1
+if a % 5 == 0 :
+	unit -= 1 
+	
+unit = 5*unit + 1
 
-print(b)	
+print(unit)
