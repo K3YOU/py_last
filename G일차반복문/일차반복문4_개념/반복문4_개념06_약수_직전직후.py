@@ -13,6 +13,7 @@ back = 0
 
 i = 1
 while i <= 280: 
+    print(i)
     if 280 % i == 0: #280의 약수 중에  
         if i < 50: # 50보다 작으면
             front = i #i는 front가 된다
