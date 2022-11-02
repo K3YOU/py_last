@@ -9,3 +9,17 @@
 		total = 10512
 		count = 6
 '''
+
+total = 0
+count = 0
+
+i = 1000
+while i <= 2000 :
+	if i % 16 == 0 and i % 1000//100 == 7 :
+		print(i , end= " ")
+		count += 1
+		total += i
+	i += 1
+print()
+print(total)
+print(count)		

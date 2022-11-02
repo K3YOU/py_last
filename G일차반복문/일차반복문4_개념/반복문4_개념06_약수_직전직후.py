@@ -12,13 +12,14 @@ front = 0
 back = 0
 
 i = 1
-while i <= 280:
-    if 280 % i == 0:
-        if i < 50:
-            front = i
-        if i >= 50 and back == 0:
-            back = i
-    i += 1
+while i <= 280: 
+    if 280 % i == 0: #280의 약수 중에  
+        if i < 50: # 50보다 작으면
+            front = i #i는 front가 된다
+        if i >= 50 and back == 0: #50보다 크면서 50이상일 때 최초의 값을 표현한 것 => back ==0
+            back = i #i는 back이 된다.
+    i += 1  #위 조건들이 나올 때 까지 반복한다는 의미.
+
 
 print(front)
 print(back)

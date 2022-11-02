@@ -20,10 +20,3 @@ while run == 1:
         print(i)
         run = 0
     i += 1
-
-
-
-
-
-
-

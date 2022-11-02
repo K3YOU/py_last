@@ -9,3 +9,20 @@
 		total = 5000
 		count = 25
 '''
+
+count = 0
+total = 0
+
+a = 100
+while   a <= 300 :
+	if a % 8 == 0 :
+		print(a , end = " ")
+		count += 1
+		total += a
+	a += 1
+print()
+print(total)
+print(count)
+
+
+

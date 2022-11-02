@@ -9,3 +9,16 @@
 		total = 2277
 		count = 11	
 '''
+count = 0
+total = 0
+
+i = 100
+while i <= 300 :
+	if i % 9 == 0 and i % 2 != 0 :
+		print(i, end = " ")
+		count += 1
+		total += i
+	i += 1
+print()
+print(total)
+print(count)		

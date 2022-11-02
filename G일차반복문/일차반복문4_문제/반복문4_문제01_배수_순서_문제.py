@@ -6,3 +6,30 @@
 	[정답] 
 		119
 '''
+
+count = 0
+i = 100
+
+
+while i >= 100 :
+	if i % 7 == 0 :
+		count += 1
+	if count == 3:
+		print(i)
+	i += 1
+
+
+#
+i = 100
+
+count = 0
+
+run = 1
+while run == 1:
+	if i % 7 == 0:
+		count += 1
+
+	if count == 3:
+		print(i, end=" ")
+		run = 0
+	i += 1			

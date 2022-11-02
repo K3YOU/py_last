@@ -9,3 +9,16 @@
         total = 171
         count = 1
 '''
+total = 0
+count = 0
+
+i = 100
+while i <= 200 :
+    if i % 9 == 0 and i % 100 // 10 == 7:
+        print(i, end =" ")
+        total += i
+        count += 1
+    i += 1
+print()
+print(total) 
+print(count)       
