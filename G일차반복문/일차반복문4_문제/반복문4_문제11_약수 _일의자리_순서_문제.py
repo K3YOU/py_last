@@ -5,3 +5,14 @@
 	[정답]
 		24
 '''
+num = 120
+i = 1
+count = 0
+
+while num >= i :
+	if num % i == 0 :
+		if i % 100 % 10 == 4 :
+			count += 1
+			if count == 2:
+				print(i)
+	i += 1			

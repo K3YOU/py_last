@@ -11,3 +11,23 @@
         아래 식은 카운트를 한 번만 사용하는 것이 아니라 
         두 번 사용한 경우이다.
 '''
+
+count = 0
+i = 1
+a = 0
+b = 0
+
+run = 1
+while run == 1 :
+    if i % 13 == 0 :
+        print(i, end = " ")
+        count += 1
+
+        if count == 4 :
+            a= i
+        elif count == 6 :
+            b = i
+            run =0 #이걸 안 해주면 무한대로 증식. 멈춰주는 기계    
+    i += 1  
+print() 
+print(a, b)  

@@ -6,15 +6,13 @@
  		36
 '''
 
-
+#count 안 써도 된다. 
 i = 1
 run = 1
-
 while run == 1 :
 	if i % 9 == 0 :
 		if i % 10 == 6 :
-			print(i)
-			run = 0 # run의 위치가 중요! 여기일 때 꺼져!
-	i += 1		
-
 	
+			run = 0
+			print(i, end = " ")
+	i += 1		

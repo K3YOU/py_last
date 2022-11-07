@@ -10,20 +10,18 @@
 		count = 25
 '''
 
-count = 0 
+count = 0
 total = 0
 
-i = 100
-while 100 <= i <= 300 :
+i = 100 
+while i <= 300 :
 	if i % 8 == 0 :
-		print(i, end = " ")
-		count += 1
+		print(i, end=" ")
 		total += i
-	i += 1
+		count += 1
+	i += 1	
 
 print()
-print("total=",total)
-print("count=", count)
-
-
+print(total)
+print(count)
 

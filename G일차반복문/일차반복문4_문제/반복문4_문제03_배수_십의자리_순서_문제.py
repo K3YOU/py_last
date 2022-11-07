@@ -6,3 +6,15 @@
 		369
 '''
 
+count = 0
+i = 10
+
+run = 1
+while run == 1 :
+	if i % 9 == 0 and i %100// 10 == 6 :
+		count += 1
+		if count == 5 :
+			print(i)
+			run = 0  
+			
+	i += 1		

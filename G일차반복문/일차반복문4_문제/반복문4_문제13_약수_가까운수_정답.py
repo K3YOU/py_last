@@ -15,15 +15,13 @@ last = 0
 i = 1
 while i <= num:
 	if num % i == 0 and i % 2 == 0 and i <= 80:
-		first = i
+		first = i #누적되다가 제일 마지막 큰 수만 저장하는 거고
 	if num % i == 0 and i % 2 == 0 and i > 80 and last == 0:
-		last = i
-	i += 1
+		last = i  # last == 0쓰는 이유 : 최근에 돌린 수 하나만 저장하기
+	i += 1 
 
 first_result = 80 - first
 last_result = last - 80
-if last_result < 0:
-	last_result = -last_result
 
 if first_result < last_result:
 	print(first)

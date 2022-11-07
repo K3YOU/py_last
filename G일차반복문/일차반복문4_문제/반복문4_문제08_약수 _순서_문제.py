@@ -5,3 +5,14 @@
 	[정답]
 		149
 '''
+i = 1
+count = 0
+
+run = 1
+while run ==1 :
+	if 745 % i == 0 :
+		count += 1
+		if count == 3:
+			print(i)
+			run = 0
+	i += 1		

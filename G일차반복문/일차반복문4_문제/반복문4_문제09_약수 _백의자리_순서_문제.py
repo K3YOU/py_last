@@ -5,3 +5,14 @@
 	[정답]
 		396
 '''
+num = 1980
+i = 100
+count = 0
+
+while num >= i :
+	if 1980 % i == 0 :
+		if i % 1000//100 == 3 :
+			count += 1
+			if count == 2:
+				print(i)
+	i += 1

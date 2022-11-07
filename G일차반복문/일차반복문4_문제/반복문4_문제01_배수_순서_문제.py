@@ -7,29 +7,28 @@
 		119
 '''
 
-count = 0
+count = 0 
+
 i = 100
 
-
-while i >= 100 :
+'''
+run = 1
+while run ==1 :
 	if i % 7 == 0 :
 		count += 1
-	if count == 3:
-		print(i)
+
+		if count == 3 :
+			print(i, end = " ")
+			run = 0 
 	i += 1
+'''
 
+#run 안 쓰고 쓰는 방법
 
-#
-i = 100
-
-count = 0
-
-run = 1
-while run == 1:
-	if i % 7 == 0:
+while 100 <= i :
+	if i % 7 == 0 :
 		count += 1
 
-	if count == 3:
-		print(i, end=" ")
-		run = 0
-	i += 1			
+		if count == 3 :
+			print(i)
+	i += 1		

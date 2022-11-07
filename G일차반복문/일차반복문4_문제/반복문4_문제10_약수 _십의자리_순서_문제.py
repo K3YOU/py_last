@@ -5,3 +5,16 @@
 	[정답]
 		33
 '''
+num = 1980
+
+
+count = 0
+
+i = 1
+while num >= i :
+	if num % i == 0 and i % 1000 % 100 // 10 == 3:
+			count += 1
+			if count == 2 :
+				print(i)
+	i += 1			
+

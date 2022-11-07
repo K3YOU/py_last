@@ -27,7 +27,7 @@ while run == 1:
         count += 1
 
         if count == 4:
-            first = i
+            first = i #변수를 중간에 넣고 싶으면 제일 위에서 선언을 하고 들어와야 한다.
         elif count == 6:
             last = i
             run = 0

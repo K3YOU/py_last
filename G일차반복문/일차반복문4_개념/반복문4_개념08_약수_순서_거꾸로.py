@@ -16,3 +16,14 @@ while i >= 1: #1까지만
 			print(i)
 
 	i -= 1 # 작아지는 것이므로 마이너스
+
+count = 0 
+i = 852
+while i >= 1:
+	if 852 % i == 0 :
+		count += 1
+
+		if count == 5 :
+			print(i)
+
+	i -= 1		
