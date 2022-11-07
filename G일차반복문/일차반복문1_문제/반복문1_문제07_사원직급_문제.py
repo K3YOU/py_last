@@ -20,15 +20,13 @@
         ...
         ...
 '''
-i =1
+i = 1
 
-while i<= 30 :
+while i <= 30 :
     if 1<= i <= 5 :
-        print("과장", i)
-    if 6 <= i <= 15 :
-        print("대리", i)
+        print("과장")
+    if 6 <= i <= 15:
+        print("대리")
     if 16 <= i <= 30 :
-        print("사원", i)
-    i += 1
-
-
+        print("사원")
+    i += 1            

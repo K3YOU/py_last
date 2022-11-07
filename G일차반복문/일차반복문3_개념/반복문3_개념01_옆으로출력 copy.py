@@ -14,7 +14,7 @@ while i <= 10:
     i += 1
 
 a = 1
-b = 1
+b = 1 
 while a == 1:
     print(b)
     b += 1

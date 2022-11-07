@@ -8,11 +8,11 @@
 #약수이면서 백의 자리에 4가 있는 경우
 
 num = 1980
+
 i = 1
 
-while num >= i :
-
-	if i >= 100 :
-		if i%1000//100 == 4:
+while i <= num :
+	if num % i == 0  and i >= 100:
+		if i % 1000 // 100 == 4:
 			print(i)
-	i += 1			
+	i += 1		
