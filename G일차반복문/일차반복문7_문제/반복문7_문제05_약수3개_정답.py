@@ -13,12 +13,12 @@ print(num)
 
 count = 0
 
-i = 1
-while i <= num:
-	if num % i == 0:
-		print(i, end=" ")
+약수 = 1
+while 약수 <= num:
+	if num % 약수 == 0:
+		print(약수, end=" ")
 		count += 1
-	i += 1
+	약수 += 1
 
 print()
 if count == 3:

@@ -5,3 +5,12 @@
 	900
 '''
 
+answer = 0
+i = 1
+run =1 #i의 범위를 지정 못 하니깐 
+while run == 1 :
+	if i % 45 == 0 and i % 60 == 0 and i % 75 == 0  :
+		answer = i
+		run = 0 
+	i +=1
+print(answer)		

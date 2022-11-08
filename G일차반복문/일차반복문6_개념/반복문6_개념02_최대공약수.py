@@ -14,3 +14,4 @@ while i <= 45:
 	i += 1
 
 print(answer)
+

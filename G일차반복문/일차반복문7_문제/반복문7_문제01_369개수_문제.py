@@ -13,3 +13,27 @@
             98 1
             99 2
 '''
+
+i = 1
+
+while i <= 100 :
+    # 백의 자리에서 3,6,9가 나올 경우
+    # 십의 자리에서 3,6,9가 나올 경우
+    # 일의 자리에서 3,6,9가 나올 경우
+    x = i //100 
+    y = i % 100 // 10 
+    z = i % 10 
+
+    count =0
+    if x  == 3 or x  == 6 or x  == 9 :
+        count += 1
+    if y  == 3 or y  == 6 or y  == 9 :
+        count += 1
+    if z  == 3 or z == 6 or z  == 9 :
+        count += 1
+        
+    if count >0 :
+        print(i, count)
+    i += 1    
+
+
