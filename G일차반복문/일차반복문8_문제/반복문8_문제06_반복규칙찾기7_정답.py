@@ -24,10 +24,10 @@ while i < 10:
 	print(x, y)
 
 	x += 1
-	if plus < y:
-		plus += 1
+	if plus < y: 
+		plus += 1 #2
 	else:
-		y += 1
+		y += 1 #3
 		plus = 1
 
 	i += 1

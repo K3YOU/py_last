@@ -14,21 +14,24 @@
 		랜덤 ==> 5
 		[출력] 6 + 5 + 2 + 7 + 8 = 28
 '''
+#랜덤 두개 만드는 문제!!
 import random
-
-count = random.randint(2, 5)
+count = random.randint(2, 5) #숫자 몇개 뽑을지 랜덤으로 뽑기
 print("반복 횟수 =", count)
 
-total = 0
+total = 0 #다 더한 값
 
-i = 0
-while i < count:
-	r = random.randint(1, 9)
-	total += r
-	print(r, end="")
+i = 0 
+while i < count: #반복횟수만큼 돌려야하니깐
+	r = random.randint(1, 9) #하나의 자리값을 채우기위한 또 다른 새로운 랜덤 숫자
+	total += r 
+	print(r, end="") 
 
-	if i < count - 1:
-		print(end=" + ")
+	if i < count - 1:#count한 수 만큼 돌려야하므로 커지면 안된다.
+		print(end=" + ") #위의 프린트문에서 r을 받고 여기서는 + 를 받은 r +의 상태로 반복분을 돈다.
 	i += 1
 
 print(" =", total)
+
+
+	

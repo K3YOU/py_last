@@ -12,22 +12,23 @@
 import random
 
 # 3 5 2 7 10 7 8 7 6 10 
-max = 0
-count = 0
+max = 0 #가장큰수
+count = 0 #중복 출력된 횟수
 
-i = 0
-while i < 10:
-	r = random.randint(1, 10)
-	if max < r:
-		max = r
-		count = 0
-	if max == r:
-		count += 1
+i = 0 
+while i < 10:  #랜덤으로 10번 출력해야하므로 i라는 새로운 변수를 써준다.
+	r = random.randint(1, 10) ##랜덤함수를 while문 안에 써주기 그래야 계속 돌아가면서 10번 랜덤으로 출력이 됨
+	#print("r",r)
+	if max < r: ###가장 큰 수가 출력숫자보다 작으면
+		max = r ### 출력숫자가 가장 큰 수가 된다
+		count = 0 ### 중복될 때만 세는 것이므로 여기서는 숫자를 안 센다.
+	if max == r: ##중복출력되는 경우
+		count += 1 ### 중복되는 값이 없더라도, 출력숫자 = 가장 큰 수 이므로 한번 카운트가 된다.
 
 	print(r, end=" ")
 
-	i += 1
+	i += 1 #밑에서는 세고 있어야함
 
 print()
 print("가장 큰 수 =", max)
-print(count)
+print("count",count)

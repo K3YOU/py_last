@@ -18,6 +18,9 @@
 a = 0
 b = 30
 
-while a <= 9 :
-	print(a,b)
-	
+i = 0
+while i <= 9 : # i = 1 # i = 2
+	print(a,b) #0,30 # 1,29
+	a += 1 # a =1
+	b = b - a	#30 - 1 = 29
+	i += 1	  # i = 2

@@ -18,11 +18,11 @@ result = False
 
 # 1 1 1 7 7 7 1 1 7 7 
 i = 0
-while i < 10:
+while i < 10: #10번 출력
 	r = random.randint(1, 2)
-	if r == 2:
+	if r == 2: #2이면 7로 나오기
 		r = 7
-	print(r, end=" ")
+	print(r, end=" ") #출력하기
 
 	if r == 7:
 		count += 1
