@@ -24,3 +24,44 @@
 		오른발 = 2
 		오른발 = 1
 '''
+계단 = 1
+
+
+result = False #왼쪽이면 거짓, 오른쪽이면 참
+
+i = 30 # 30번 실행할 함수 #철수
+
+count = 0
+while i >= 계단 :
+	##i가 하나씩 작이지게 만들고 5단위 왼/오 교차하게 나오게 만들기
+	
+	if result == False :
+		print("왼발", i)
+	if result == True :
+		print("오른발",i)
+	count += 1 #카운트를 if밖에서 세어야 5씩 묶어서 나올 수 있다.
+
+	if count % 5 == 0:
+		result = not result #왼은 오로 , 오는 왼으로 나오게 바꾸는 방법
+	i -= 1 #i가 하나씩 작아지게 만들기
+
+
+
+##핵심 : 왼오 먼저 정의 -> 카운트 세기 -> %5 == 0 이면 왼오 바꾸기
+
+
+'''while i <= 계단 :
+	count = (i % 5)% 2  #i를 짝수인지 홀수인지 나누는 방법이라서 틀림
+
+	if count == 0 :
+		result == False #왼쪽일때
+		print(" 왼발",count, end = " ")
+	if count != 0:
+		result == True	#오른쪽일때
+		print(" 오른발",count, end = " ")
+	count += 1
+	i += 1
+
+	문제점 : count = 5가 되면 발을 바꿔야하는데 그걸 못 함 계속 왼오왼오로 나옴
+'''
+

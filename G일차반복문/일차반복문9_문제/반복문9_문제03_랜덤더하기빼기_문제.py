@@ -16,5 +16,64 @@
 			3 + 6 - 5 + 3 - 1 이된다. 
 '''
 
-r = 0
-op = 0
+import random
+
+#r =숫자를 5개 뽑기 #r의 개수를 세주는 변수도 필요
+#op = 더하기 빼기 4개 뽑기 #op의 개수를 세주는 변수도 필요 
+	 # r->op ->r ->op     sum
+#sum =총합구하기
+
+run = 1
+count = 0
+count1 = 0
+sum = 0
+while run == 1:
+	r = random.randint(1,9)
+	print(r, end = " ")
+	count += 1
+	if count == 5 and count1 == 4:
+		run = 0
+	
+	else: #count가 5가 아닐 때랑 count1이 4가 아닐 때 부호를 한번 더 출력하기
+		op = random.randint(0,1)
+		count1 += 1
+		
+		if op == 0 :
+				print("-",end = " ")
+				sum -= r
+		if op == 1:
+				print("+",end= " ")
+				sum += r
+		
+
+print()
+print("sum",sum)
+
+'''
+print("##################################################################")
+
+
+
+sum = 0
+i = 0
+while i <=4 :
+	r= random.randint(1,9)
+	print(r,end= " ")
+
+	op = random.randint(0,1)
+	if op == 0 :
+		sum -= r
+		print("-")
+	if op == 1:
+		sum += r
+		print("+")
+	
+	
+	i += 1
+print("sum :" , sum) 
+
+		
+
+print()
+print("sum",sum)
+'''
