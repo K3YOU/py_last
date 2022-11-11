@@ -6,7 +6,22 @@
     x = 9
     y = 1
 '''
+#랜덤 숫자 2개를 저장하기
+#합 새로운 변수
+import random
 
+
+
+run = 1
+while run == 1 :
+    a =random.randint(1,9)
+    b =random.randint(1,9)
+    sum = a+ b
+
+    if sum == 10 :
+        print(a,b,sum)
+        run = 0
+    
 import random
 
 x = 0
@@ -21,6 +36,6 @@ while run == 1:
     if total == 10:
         run = 0
 print("x =", x)
-print("y =", y)
+print("y =", y) 
 
 

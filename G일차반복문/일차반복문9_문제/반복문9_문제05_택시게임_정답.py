@@ -25,14 +25,7 @@ i = 0
 while i < 5:
     dir = random.randint(1, 4)
 
-    if dir == 1:
-        print("북")
-        y += 1
-    if dir == 2:
-        print("동")
-        x += 1
-    if dir == 3:
-        print("남")
+    if dir == 1:   
         y -= 1
     if dir == 4:
         print("서")

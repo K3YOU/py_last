@@ -28,13 +28,13 @@ count = 0
 count1 = 0
 sum = 0
 while run == 1:
-	r = random.randint(1,9)
+	r = random.randint(1,9) #처음꺼는 따로 출력하는게 중요하다
 	print(r, end = " ")
 	count += 1
-	if count == 5 and count1 == 4:
+	if count == 5 and count1 == 4: #여기서 멈추기
 		run = 0
 	
-	else: #count가 5가 아닐 때랑 count1이 4가 아닐 때 부호를 한번 더 출력하기
+	else: 
 		op = random.randint(0,1)
 		count1 += 1
 		

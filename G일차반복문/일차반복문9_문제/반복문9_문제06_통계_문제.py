@@ -7,4 +7,33 @@
 		   합격생은 점수 옆에 [합격]을 불합격생은 [불합격]을 출력한다. 
 		5. 전교생(10명)의 총점과 평균을 출력한다.
 		6. 1등의 번호와 점수를 출력한다.
-'''
+'''  
+import random
+
+
+total = 0
+maxscore =0
+
+
+num =1
+while num <= 10:
+	score = random.randint(0,100)
+	
+	total += score
+
+	if maxscore < score :
+		maxscore = score
+		
+
+	if score >= 60 :
+		print(num,score,"합격")
+	else :
+		print(num,score,"불합격")
+	num += 1
+
+avg=total/10
+print("total",total)
+print("avg",avg)
+print("maxscore :",maxscore)
+
+

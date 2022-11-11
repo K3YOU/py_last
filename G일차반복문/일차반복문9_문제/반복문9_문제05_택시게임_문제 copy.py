@@ -35,19 +35,20 @@ while run == 1 :
 		print("r :",r,end= " ") #2 #1
 		if r == 1:
 			print("north")#north
-			y += 1	#####틀린부분!!!!!!! ##### y = 1 이렇게 해야 밑에서 누적으로 저장을 할 수 있다!!!!!!!! +=/-= 이거 자체가 누적이라는 말
+			y = 1	
 		if r == 2:
 			print("east") #east
-			x +=1	
+			x =1	
 		if r == 3:
 			print("south")
-			y -= 1	
+			y = -1	
 		if r == 4:
 			print("west")	
-			x -= 1	
+			x = -1	
 		
 		sum_x += x 
 		sum_y += y
 	i -= 1 #4 #3
 print("x :",x,"y :",y)
+print("sum_x :",sum_x,"sum_y :",sum_y)
 

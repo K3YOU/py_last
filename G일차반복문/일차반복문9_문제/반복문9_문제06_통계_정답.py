@@ -27,9 +27,9 @@ while i <= 10:
     total += score
 
     if score >= 60:
-        print(score, "[합격]")
+        print(maxIndex,score, "[합격]")
     if score < 60:
-        print(score, "[불합격]")
+        print(maxIndex,score, "[불합격]")
     
     i += 1
 

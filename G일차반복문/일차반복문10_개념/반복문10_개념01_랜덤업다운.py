@@ -9,6 +9,49 @@
     숫자를 맞추면 게임은 종료된다.
 '''
 import random
+#com's number
+com = random.randint(1,100)
+print("com:",com)
+#my number
+run = 1
+while run == 1:
+    me = random.randint(1,100)
+    print(me)
+    #bigger :keep
+    if com > me :
+        print("com is bigger", com, me)
+        
+    #smaller : keep
+    if com < me :
+        print("com is smaller", com, me)
+        
+    #same :end
+    if com == me :
+        print("same", com, me)
+        run = 0 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+""" import random
 
 com = random.randint(1, 100)
 print("com =", com)
@@ -24,5 +67,5 @@ while run == 1:
     if com == me:
         print(me, "같다")
         run = 0
-
+ """
 
