@@ -43,11 +43,12 @@ for i in range(5):
     b += 1
     c += 1
 
+print("=======================================")
 a = 0
 b = 1
 c = 2
-for i range(5)
-print(a," ",b," ",c)
-a += 1
-b += 1
-c += 1
+for i in range(5):
+    print(a," ",b," ",c)
+    a += 1
+    b += 1
+    c += 1
