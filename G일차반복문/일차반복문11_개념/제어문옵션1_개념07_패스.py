@@ -21,7 +21,7 @@ me = random.randint(0, 2)
 if me == com :
     print("비겼다.")
 elif me == 0 and com == 2:
-    pass 
+    print("이겼다")
 elif me == 1 and com == 0:
     pass
 elif me == 2 and com == 1:

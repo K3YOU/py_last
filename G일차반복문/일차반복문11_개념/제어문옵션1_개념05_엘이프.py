@@ -24,7 +24,7 @@ b = 100
 if b == 90:
     print("b1")
 elif b == 100:
-    print("b2")
+    print("b2") #여기서 답이 나왔어서 밑의 elif는 무시되었다. 
 elif b == 100:
     print("b3")
 print("-------------------------")

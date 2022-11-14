@@ -13,5 +13,5 @@ log_pw = "1234qwer"
 
 if join_id == log_id and join_pw == log_pw:
     print("로그인")
-else:
+else: #id != or pw !=
     print("로그인실패")

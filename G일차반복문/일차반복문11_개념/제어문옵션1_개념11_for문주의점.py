@@ -42,3 +42,12 @@ for i in range(5):
     a += 1
     b += 1
     c += 1
+
+a = 0
+b = 1
+c = 2
+for i range(5)
+print(a," ",b," ",c)
+a += 1
+b += 1
+c += 1

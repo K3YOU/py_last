@@ -16,6 +16,7 @@ import random
 
 com = random.randint(0, 2)
 me = random.randint(0, 2)
+print(com,me)
 
 if me == com :
     print("비겼다.")
@@ -25,7 +26,7 @@ elif me == 1 and com == 0:
     print("내가 이겼다.")
 elif me == 2 and com == 1:
     print("내가 이겼다.")
-else:
+else: # if랑 elif를 제외한 모든 것! 
     print("내가 졌다.")
     
 # 위와같이 조건식이 길어진 경우 elif 와 else 를 활용하면 식을 효과적으로 줄일 수 있다.   

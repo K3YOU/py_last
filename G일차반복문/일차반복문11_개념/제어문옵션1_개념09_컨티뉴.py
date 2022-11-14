@@ -30,7 +30,7 @@ b = 0
 while b < 10:
     r = random.randint(1, 10)
     if r > 5:
-        continue
-    print(r , end=" ")
+        continue # 5이하가 아니면 프린트를 하지 말고 계속하라는 뜻이다.
+    print(r , end=" ") #5이하이면 프린트를 해라
     b += 1
     

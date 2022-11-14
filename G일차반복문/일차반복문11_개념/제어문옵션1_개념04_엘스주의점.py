@@ -26,5 +26,5 @@ if r == 2:
     print("까페라떼")
 if r == 3:
     print("모카라떼")
-else:
+else: #여기서 else는 위의 모카라떼의 if만 연결되어 있으므로 r != 3인 뜻이다.  
     print("기타")
