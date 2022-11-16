@@ -11,3 +11,30 @@
 '''
 
 arr = []
+
+import random
+i = 1
+
+while i <= 20 :
+    a = random.randint(1,100)
+    arr.append(a)
+    if a < 30 or (a >70 and a % 4 != 0 ):
+        print(a)
+    i += 1
+print("arr = ",arr)
+
+
+import random
+
+arr = []
+
+i = 0
+while i < 20:
+    r = random.randint(1, 100)
+    arr.append(r)
+
+    if arr[i] < 30 or (70 < arr[i] and arr[i] % 4 == 0):
+        print(arr[i])
+    i += 1
+print(arr)
+

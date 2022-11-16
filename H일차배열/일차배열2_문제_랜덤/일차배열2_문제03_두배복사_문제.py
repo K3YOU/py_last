@@ -9,3 +9,16 @@
 
 arr = []
 total = []
+
+import random
+
+i = 0
+while i < 5:
+    a = random.randint(1,10)
+    arr.append(a)
+
+    total.append(2*a)
+    i += 1    
+print(arr)
+print(total)
+

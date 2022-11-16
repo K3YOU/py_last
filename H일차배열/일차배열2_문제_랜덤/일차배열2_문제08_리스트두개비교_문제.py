@@ -9,5 +9,24 @@
 a = []
 b = []
 
+import random
+
+i = 0
+while i < 5 :
+    r1=random.randint(1,100)
+    r2=random.randint(1,100)
+    a.append(r1)
+    b.append(r2)
+
+    if a[i] % 2 == 0 and b[i] % 2 == 0:
+        print("짝수")
+    elif a[i] % 2 == 1 and b[i] % 2 == 1:
+        print("홀수")
+    else: #짝수도 홀수도 아닌 경우 : 하나는 짝수 하나는 홀수 * 2 다 총집합
+        print("다르다")
+    i += 1
+print("a =",a)
+print("b =",b)
+
 
 

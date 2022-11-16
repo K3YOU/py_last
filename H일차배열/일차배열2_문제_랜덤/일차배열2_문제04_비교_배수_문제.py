@@ -8,3 +8,16 @@
 '''
 
 arr = []
+
+import random
+
+i = 0
+while i < 5:
+    a= random.randint(1,100)
+    arr.append(a) #arr이라는 배열에 a를 추가한다
+
+    if a % 5 == 0 :
+        print("5의 배수 :",arr[i]) #arr이라는 배열에 i번재 요소를 출력한다. = 5의 배수이므로
+    
+    i += 1 #while문 안에서 돌아가 마지막에 벗어나야하므로, while이랑 대등한 위치가 되면 5의배수만 나오지 전체 배열은 안나옴
+print("전체배열:",arr) #여기에 적는 이유는 마지막에 기억한 것만 나타내야 배열이 완성본으로 나옴

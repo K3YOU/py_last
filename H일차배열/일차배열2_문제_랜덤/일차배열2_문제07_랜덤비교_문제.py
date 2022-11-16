@@ -13,3 +13,22 @@ base = 0
 
 
 
+import random
+i = 0
+while i < 5:
+    r1 = random.randint(1,100)
+    r2 = random.randint(1,100)
+    r3 =random.randint(1,100)
+    a.append(r1)
+    b.append(r2)
+    base = 73
+
+    if a[i] > base :
+        print("a :",a[i])
+    if b[i] >base :
+        print("b :",b[i])
+    i += 1
+print("base :",base)
+print("a =",a,"b =",b)
+
+

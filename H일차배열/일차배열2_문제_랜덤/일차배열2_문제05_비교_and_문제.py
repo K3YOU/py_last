@@ -7,5 +7,17 @@
         91
         56
 '''
+import random
 
 arr = []
+
+i = 1
+while i <= 20 :
+
+    a = random.randint(1,100)
+    arr.append(a)
+    if a > 50 and a % 7 == 0 :
+        print(a)
+    i += 1
+print("arr =", arr)
+    

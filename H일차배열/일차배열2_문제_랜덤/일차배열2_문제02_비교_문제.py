@@ -12,4 +12,15 @@
 arr = []
 
 import random
-a =random.randint(1,100)
+
+i = 0
+while i < 5:
+    a =random.randint(1,100)
+    arr.append(a)
+
+    if arr[i] > 50 :
+        print(arr[i])
+    i += 1
+print(arr)
+
+
