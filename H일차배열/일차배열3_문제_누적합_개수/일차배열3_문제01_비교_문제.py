@@ -15,5 +15,22 @@
 
 a = []
 
+count = 0
+sum = 0 
 
+import random
+
+i = 0
+비교 = 50
+
+while i < 5 :
+    r = random.randint(1,100)
+    a.append(r)
+    
+    if a[i] > 50 :
+        print(a[i])
+        sum += a[i]
+        count += 1
+    i += 1
+print("a :",a,"비교",비교, "sum :",sum ,"count :",count)
 

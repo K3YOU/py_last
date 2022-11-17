@@ -19,3 +19,5 @@ for i in range(len(a)): # len(a) 가 곧 5이다.
     total += a[i]
     
 print(total)
+
+

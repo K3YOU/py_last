@@ -9,4 +9,15 @@
 a =[10, 20, 30, 40, 50, 60, 70, 80]
 print("교환 전 =", a)
 
+import random
+r1 =random.randint(0,len(a)-1)
+r2 =random.randint(0,len(a)-1)
+print(r1,r2)
+
+temp=a[r1] #1단계. 값을 먼저 다시 곳에 저장
+a[r1]=a[r2] #2단계. 바꾸기 ->처음꺼 변경 완료
+a[r2] = temp #3단계. 다른 곳에 저장된걸 꺼내서 두번째꺼 변경
+
+print("교환 후", a)
+
 

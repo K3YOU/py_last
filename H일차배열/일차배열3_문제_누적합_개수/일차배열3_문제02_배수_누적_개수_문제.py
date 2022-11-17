@@ -16,3 +16,23 @@
 '''
 
 arr = []
+
+sum = 0
+count = 0
+
+import random
+
+for i in range (5) :
+    a =random.randint(1,100)
+    arr.append(a)
+    if arr[i] % 2== 0 :
+        print("even :",arr[i])
+        sum += arr[i]
+        count += 1
+    i += 1
+print(arr)
+print("count",count)
+print("sum",sum)
+
+
+

@@ -11,7 +11,22 @@
 '''
 
 omr = [4,3,1,5,3,2,1,4,5,3]
-a =[]
+a =[] #철수답안지
+
+score = 0
+
+import random
+for i in range(10):
+    r= random.randint(1,5)
+    a.append(r)
+    
+    if a[i] ==omr[i] :
+        score += 10
+    i += 10
+
+print(omr)
+print(a)
+print(score)
 
 
 

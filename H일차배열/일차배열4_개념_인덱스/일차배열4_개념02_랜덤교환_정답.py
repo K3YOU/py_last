@@ -14,9 +14,9 @@ r1 = random.randint(0, len(a)-1)
 r2 = random.randint(0, len(a)-1)
 print(r1 , " :" , r2)
 
-temp = a[r1]
-a[r1] = a[r2]
-a[r2] = temp
+temp = a[r1] #먼제 temp에 a[r1]의 값을 저장해두고
+a[r1] = a[r2] #a[r2]의 값을 받아들인다.
+a[r2] = temp #a[r2]의 값은 temp에 넣는다
 
 print("교환 후 =", a)
 

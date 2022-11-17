@@ -16,9 +16,26 @@
 		total = [8, 1, 3, 56, 3]
 '''
 
+
+
 a = [3, 4, 2, 8, 6]
 b = [5, 3, 1, 7, 3]
 
 op = [0, 1, 0, 2, 1]
 
 total = []
+
+i = 0
+for i in range (len(a)):
+	result = 0  #새로운 변수를 지정할 것
+	if op[i] == 0 :
+		result =a[i] +b[i] #a라는 배열의 i번째 요소 = n(특정 수) 와 b라는 배열의 i번째 요소 = m(특정 수)끼리 더한다.
+	elif op [i] == 1:
+		result =a[i] -b[i]
+	else :
+		result =a[i] * b[i]
+	total.append(result) #하나의 연산자가 나오면 total이라는 요소에 추가한다. 
+i += 1 #i가 카운트가 될 수록 total이라는 배열에 요소들이 하나씩 더해진다.
+
+print(total)
+

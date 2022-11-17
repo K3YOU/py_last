@@ -26,3 +26,14 @@ candy = []
 count =	[3, 2, 1, 0]
 remainder = [5, 3, 11, 22]
 
+c = 0
+#candy[i] = 25 * count[i] +remainder[i]
+
+for i in range (4):    #i => 0~3  # range(len(count)) : i => 0~ 3 :len(count)가 총 4개인데 파이썬은 0부터 세니깐 i의 범위는 0~3까지라는 거다!!!!
+	c = 25 * count[i] +remainder[i]
+	candy.append(c)
+
+print(candy)
+
+
+

@@ -14,5 +14,33 @@
 a = []
 b = []
 
+total1 = 0
+total2 = 0
+
+import random
+i = 0
+for i in range (5): #i의 총 수보다 하나 더 많게
+    r = random.randint(1,100)
+    a.append(r)
+    total1 += a[i]
+    r1 = random.randint(1,100)
+    b.append(r1)
+    total2 += b[i]
+i += 1
+
+print("a", a)
+print("b",b)
+print("total1",total1)
+print("total2",total2)
+
+if total2 == total1 :
+    print(total1,total2)
+if total2 > total1 :
+    print(total2)
+if total1 >total2:
+    print(total1)
+
+
+
 
 

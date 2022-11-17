@@ -11,4 +11,24 @@
 a = []
 
 
+import random
+
+for i in range (5) : #i가 0부터 시작해서 ()의 수는 포함 안 한다고 생각하면 쉽다.
+    r = random.randint(1,100)
+    a.append(r)
+print(a)
+
+r1 = random.randint(0,4)
+print("출력 :",end= " ")
+if r1 == 0:
+    print(a[0])
+if r1 == 1:
+    print(a[1])
+if r1 == 2:
+    print(a[2])
+if r1 == 3:
+    print(a[3])
+if r1 == 4:
+    print(a[4])
+
 

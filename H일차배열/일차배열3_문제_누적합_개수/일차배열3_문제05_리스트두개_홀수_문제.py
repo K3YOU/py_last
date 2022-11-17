@@ -11,9 +11,37 @@
         total2 = 195
         195    
 '''
+import random
 
 a = []
 b = []
 
+sum1 =0
+sum2 =0 
 
+i = 0
+for i in range (6) :
+    r =random.randint(1,100)
+    a.append(r)
+    
+    r1 =random.randint(1,100)
+    b.append(r1)
+    
+    if a[i] % 2 !=  0 :
+        sum1 += a[i]
+    if b[i] % 2 !=0 :
+        sum2 +=b[i]
 
+i += 1
+
+print(a)
+print(b)
+print(sum1)
+print(sum2)
+
+if sum1 == sum2:
+    print(sum1,sum2)
+elif sum1 > sum2 :
+    print(sum1)
+else:
+    print(sum2)

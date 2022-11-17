@@ -17,8 +17,9 @@ for i in range(5):
     a.append(r)
 print("a =", a)
 
-index = random.randint(0, len(a) - 1)
+index = random.randint(0, len(a) - 1) #랜덤넘버에서 0에서 4까지를 나타내기/for처럼 범위미포함이 아니니깐
+
 print("index =", index)
-print(a[index])
+print(a[index]) #a[i]대신에 index를 넣기
 
 
