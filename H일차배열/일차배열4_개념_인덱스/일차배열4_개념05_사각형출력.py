@@ -16,7 +16,7 @@ for i in range(len(a)):
         print()
         count =0
     
-    
+    #카운트를 세대가 3이 되면 줄만 바꾸는 방식
 
 
 

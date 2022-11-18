@@ -25,13 +25,13 @@ r = random.randint(0, 9)
 r = 7
 print("r =", r)
 
-count = 0
+count = 0 #숫자가 들어간 자리들의 수를 계산해야함
 
-value = 1
+value = 1 #인덱스 자리 정한 후 1씩 증가해야하므로 
 index = r
 while count < r:
-	a[index] = value
-	index += 1
+	a[index] = value #1이 시작되는 자리를 정하기
+	index += 1 #
 	value += 1
 	count += 1
 
@@ -43,7 +43,7 @@ print(a)
 print()	
 
 
-index = r
+index = r #어느 자리부터 숫자를 넣을 것인지
 count = 1
 while count <= r:
 	a[index % len(a)] = count
