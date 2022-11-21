@@ -16,5 +16,10 @@
 numberList = [1001, 1002, 1003, 1004, 1005]
 scoreList =   [87, 11, 45, 98, 23]
 
+import random
 
+r = random.randint(0,4)  #len(numberLsit)-1 = 4
+print(r)
+temp = r
+print(numberList[temp],scoreList[temp])
 

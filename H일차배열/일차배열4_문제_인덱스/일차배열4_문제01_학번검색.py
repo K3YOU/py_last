@@ -15,3 +15,8 @@
 numberList = [ 1001, 1002, 1003, 1004, 1005 ]
 scoreList =  [ 87, 11, 45, 98, 23 ]
 
+import random
+r = random.randint(0,len(numberList)-1)
+
+index = r
+print(numberList[index],scoreList[index])
