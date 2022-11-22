@@ -16,6 +16,7 @@ a = [1, 2, 3, 4,
 garo = [0, 0, 0]
 sero = [0, 0, 0, 0]
 
+#garo
 garoIndex = 0
 for i in range(len(a)):
 	garo[garoIndex] += a[i]
@@ -23,6 +24,7 @@ for i in range(len(a)):
 		garoIndex += 1
 print("garo =", garo)
 
+#sero
 seroIndex = 0
 for i in range(len(a)):
 	sero[seroIndex] += a[i]

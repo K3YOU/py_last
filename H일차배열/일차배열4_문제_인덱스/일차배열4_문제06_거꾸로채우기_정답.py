@@ -18,18 +18,18 @@ import random
 
 a = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-index = random.randint(0, 9)
-print("index =", index)
+ranindex = random.randint(0, 9)
+print("ranindex =", ranindex)
 
-count = random.randint(1, 10)
-print("count =", count)
+rancount = random.randint(1, 10)
+print("rancount =", rancount)
 
 value = 1
-for i in range(count):
-    a[index] = value
-    index -= 1
+for i in range(rancount):  #0이 들어가있으니깐 안 넣는다 그래서 범위를 rancount로 함
+    a[ranindex] = value
+    ranindex -= 1
     value += 1 
 
-    if index < 0:
-        index = len(a) - 1
+    if ranindex < 0:
+        ranindex = len(a) - 1
 print(a)

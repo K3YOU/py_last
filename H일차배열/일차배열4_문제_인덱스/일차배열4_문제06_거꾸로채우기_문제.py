@@ -14,7 +14,38 @@
 	
 
 '''
+##번외문제!!
 
-a = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+a = [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1] #-1로 채워진 배열을 위와 같은 a로 바꾸어라  ->append가 아니라 기존의 것을 채워넣는 방식으로 해야한다.
 
+import random
+'''
+ranindex = random.randint(0,9) #시작점
+rancount = random.randint(1,10) #숫자몇개넣을지
+
+print(ranindex,rancount)
+'''
+ranindex = 7
+rancount =8
+
+count = 1
+
+for i in range(len(a)):
+	a[ranindex] = count
+	#a.append(a[ranindex])
+
+	ranindex -= 1
+	count += 1
+	#if count == ranindex :
+	#	count = 0
+	if i >= rancount-1: 
+		count = 0
+	
+
+	if ranindex <0 :
+		ranindex = len(a) -1  #뒤에서부터 채워준다
+		
+print(a)
+
+	
 

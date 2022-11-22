@@ -10,7 +10,7 @@
 
 a = [1,2,3,4,5,6,7,8,9,0]
 
-j = 1
+
 start = 0
 end = 1
 for i in range(10):
@@ -21,4 +21,7 @@ for i in range(10):
         start = 0
         end += 1
         print()
+
+
+
 

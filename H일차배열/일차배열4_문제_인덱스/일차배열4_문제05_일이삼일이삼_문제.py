@@ -14,5 +14,41 @@
 
 arr = []
 
+import random
+r = random.randint(2,10)
+print("r",r)
 
 
+count = 0
+i = 1
+run = 1
+while run == 1:
+	if count < r :
+		if i == 4:
+			i = 1 
+ 
+		arr.append(i)
+
+		#print(arr,end= " ")
+		i += 1
+
+	if count == r:
+		run = 0
+	count += 1	
+	
+print("arr",arr)	
+
+print("==============================")
+
+arr1=[]
+count1 = 1
+print("r",r)
+
+for i in range(r) :
+	if count1 == 4:
+		count1 = 1
+
+	arr1.append(count1)
+	count1 += 1
+print(arr1)
+	

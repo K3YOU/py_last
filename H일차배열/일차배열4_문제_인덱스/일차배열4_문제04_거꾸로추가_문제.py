@@ -9,3 +9,9 @@
 a = [10, 20, 30, 40]
 b = []
 
+index = len(a) - 1
+for i in range(len(a)):
+	b.append(a[index])
+	index -= 1
+print("b =", b)
+
