@@ -12,19 +12,20 @@ import random
 
 a = []
 
-max = 0
-min = 100
+max = -100 #
+min = 100 #최소값은 가진 수들 중에서 제일 큰 값으로, 값을 낮추기
 
 for i in range(5):
-	r = random.randint(-100, 100)
-	a.append(r)
+	r = random.randint(-100, 100) # 37,53,90,-82,-17
+	a.append(r) #37,53,90,-82, -17
 
-	if max < a[i]:
-		max = a[i]
-	if min > a[i]:
-		min = a[i]
+	if max < a[i]: # -100<37, 37<53, 53<90
+		max = a[i] #max = 37,53,90
+	if min > a[i]: #100 > 37, 37>-82
+		min = a[i] #min = 37,-82
 
-print(a)
+
+print(a) #-17
 
 print(max)
 print(min)

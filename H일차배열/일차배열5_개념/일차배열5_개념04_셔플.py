@@ -13,10 +13,11 @@ arr = [10, 20, 30, 40, 50]
 
 size = len(arr) - 1
 
-for i in range(10):
+for i in range(10): # i = 0 ~ 9 반복
 	index1 = random.randint(0, size)
 	index2 = random.randint(0, size)
 
+	#서로의 값 교환
 	temp = arr[index1]
 	arr[index1] = arr[index2]
 	arr[index2] = temp

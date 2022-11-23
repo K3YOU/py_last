@@ -12,6 +12,7 @@ a = [1,3,7]
 b = []
 for i in range(len(a)*2):
    b.append(0)
+   # 0으로 채워두고 시작
 index = 0
 bi = len(a) - 1
 for i in range(len(a)):

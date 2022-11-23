@@ -9,18 +9,22 @@
 import random
 
 a = [0, 0, 0, 0]
-check = [False, False, False, False]
+check = [False, False, False, False] #랜덤을 방지하기위한 T/F 
 
 count = 0
 while True:
-   r = random.randint(0, 3)
+   r = random.randint(0, 3) #밑에서 +1을 해줘야 하므로 범위를 하나씩 작게 
+   print("r",r,"a",a,check[r])
+   
+   #1,4,2,3
 
-   if check[r] == False:
-      a[count] = r + 1
-      check[r] = True
-      count += 1
+   if check[r] == False: #False인 것에만 들어가서
+      a[count] = r + 1 #첫 count부터 r을 저장하는데 +1한 r의 값을 넣기
+      check[r] = True # a중 한 배열이 채워졌으니 트루로 바꾸기 #True가 적히면 r이 같은 값이 나오면 이미 그 자리는 끝난다는 걸 의미
+      count += 1 #카운트 값은 커지기
 
    if count == 4:
       break
 
 print(a)
+

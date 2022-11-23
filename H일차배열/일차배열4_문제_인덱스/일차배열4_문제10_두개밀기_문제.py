@@ -6,8 +6,24 @@
       b = [7,7,3,3,1,1]
 '''
 
+
 a = [1 ,3, 7]
 b = [0, 0, 0, 0, 0, 0]
+
+aindex = 0 #인덱스는 0부터 시작하는거니깐
+bindex = len(b) -1
+for i in range(len(a)):
+   b[bindex] = a[aindex]
+   b[bindex - 1] = a[aindex]
+   bindex -= 2 #중복을 방지
+   aindex += 1 #0,1,2
+print(b)  
+
+
+
+
+   
+
 
 
 

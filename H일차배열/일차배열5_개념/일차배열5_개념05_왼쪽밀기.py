@@ -11,8 +11,8 @@ a = [0,0,2,0,3,0,4,0,0,5]
 index  = 0
 for i in range(len(a)):
 	if a[i] != 0:
-		a[index] = a[i]
-		a[i] = 0
+		a[index] = a[i] #a[index = 0] =a[0] = 0
+		a[i] = 0 #a[0]=0
 
 		index += 1
 

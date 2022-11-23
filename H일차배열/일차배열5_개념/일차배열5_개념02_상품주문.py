@@ -13,7 +13,7 @@ order = [0, 1, 3, 3, 2, 2, 1]
 total = 0
 
 for i in range(len(order)):
-	print(price[order[i]])
-	total = total + price[order[i]]
+	print(price[order[i]]) #500/1200/4300   #order[i] = price의 인덱스 번호
+	total = total + price[order[i]] #500/500 +1200/500+1200+2300
 
 print(total)

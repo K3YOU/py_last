@@ -37,14 +37,31 @@ for i in range(len(a)):
 		count = 0
 
 print()
-
-#세로
-#세로 = 1 + (1+4) +(1+4+4) / ...  이렇게 4개
-
-count1 = 0
-j1 = 1
+print()
 
 
-sum2 = 0
-#for i in range(len(sero)):
+'''
+세로
+세 개씩 끊어서
+'''
+# 세로인덱스: <0><1><2><3>
+'''
+a = [1, 2, 3, 4,
+     5, 6, 7, 8,
+     9, 10,11,12]
+'''
+
+seroIndex = 0
+for i in range(len(a)):
+	sero[seroIndex] += a[i] # sero[0] = a[0],sero[1]=a[1],sero[2]=a[2],sero[3]=a[3] ,sero[0]=a[0]+a[4]
+	seroIndex += 1 # 1 , 2, 3,4
+	if i % 4 == 3: # i = 3
+		seroIndex = 0 # 0
+print("sero =", sero)	
+
+
+#세로인덱스에 맞춰서 그 값을 더하라
+#세로인덱스를 조절하기
+#세로인덱스가 무한으로 못 늘어나게 i 값으로 조절하기
+
 

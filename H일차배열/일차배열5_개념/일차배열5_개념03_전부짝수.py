@@ -12,6 +12,7 @@
 import random
 
 a = []
+#4개를 랜덤으로 뽑아서 저장
 for i in range(4):
 	r = random.randint(0, 9)
 	a.append(r)
@@ -22,7 +23,7 @@ for i in range(len(a)):
     if a[i] % 2 == 0:
     	count += 1
 		
-if count == len(a):
+if count == len(a): #모두 짝수여야 하므로
     print(True)
 else:
     print(False)
