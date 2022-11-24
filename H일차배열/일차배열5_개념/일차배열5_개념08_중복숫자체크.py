@@ -12,7 +12,7 @@ a = [0, 0, 0, 0]
 check = [False, False, False, False] #랜덤을 방지하기위한 T/F 
 
 count = 0
-while True:
+while True: #Flase라고 적으면 나중에는 [0,0,0,0]만 나옴 a의 원래 값들로 채워져서 굳이 할 필요 없음 BUT true라고 적어주고 빠져나올 수 있게 브레이크를 써줘야한다.
    r = random.randint(0, 3) #밑에서 +1을 해줘야 하므로 범위를 하나씩 작게 
    print("r",r,"a",a,check[r])
    
@@ -28,3 +28,8 @@ while True:
 
 print(a)
 
+
+#요약
+#중복을 방지하기위한 check라는 열을 따로 만들고 그 안에는 F로 채우기
+#r 값의 범위를 하니씩 작게하고 실제 a안에 들어가는 값은 r+1
+#한 번 값이 정해지면 True로 바꿔주기

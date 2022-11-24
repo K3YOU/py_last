@@ -14,3 +14,34 @@
 monster = [9,7,8,6]
 power = 5
 
+import random
+
+count = 0
+
+while True :
+    if count == 5: #다섯 번 반복
+        break
+
+    r = random.randint(0,len(monster)-1)
+
+    #체력이 0보다 큰 경우와 아닌 경우
+    if monster[r] > 0 :
+        #(몬스터 - 체력)이 0보다 큰 경우와 아닌 경우
+        if monster[r] - power < 0 :
+            monster[r] = 0
+        else :
+            monster[r] -= power
+        
+        #왼쪽공격
+        if r > 0 and monster[r-1] > 0 :
+            monster[r-1] -= 1
+        #오른쪽공격
+        if len(monster) -1 > r and monster[r+1] > 0 :
+            monster[r+1] -= 1
+        count += 1
+        print(r,"번째 몬스터 공격",monster)
+    
+    elif monster[r] == 0:
+        print("체력이 0인 몬스터")
+
+    

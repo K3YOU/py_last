@@ -14,4 +14,23 @@
 a = []
 
 
+passcount =0
+failcount =0
+
+import random
+
+for i in range(4):
+	r = random.randint(0,100)
+	a.append(r)  #67,100,25
+
+	if a[i] >= 60 :
+		passcount += 1 #1,2
+		if passcount == 4 :
+			print(a,"상품")
+	else:
+		failcount += 1 #1
+		#passcount = 0 
+		if failcount == 4:
+			print(a,"벌칙")
+print(a)
 

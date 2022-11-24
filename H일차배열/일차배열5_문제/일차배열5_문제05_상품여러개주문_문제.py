@@ -19,14 +19,30 @@
 		44500
   
 '''
-item = [1001, 1002, 1003, 1004]
-price =[500, 1200, 4300, 2300]
+item = [1001, 1002, 1003, 1004]   #상품번호
+price =[500, 1200, 4300, 2300]    #상품의 가격
 
-order = [0, 1, 3, 3, 2, 2, 1]
-count = [3, 2, 2, 1, 3, 4, 3]
+order = [0, 1, 3, 3, 2, 2, 1]    #오늘 주문이 들어온 상품의 인덱스 번호
+count = [3, 2, 2, 1, 3, 4, 3]    #오더애서 주문한 상품들의 개수
+
+sum = 0
+sum1 = 0
+
+#order =>pirce*count
+
+for i in range(len(order)):
+	#price[i] = price[order[i]]  #order=>price 
+	
+	#price *count = sum
+	sum = price[order[i]] * count[i]
+	sum1 += sum
+print(sum1)
 
 
-
-
+for i in range(len(order)):
+	print(price[order[i]]*count[i])
+	sum += price[order[i]]*count[i]
+print(sum)
+	
 
 

@@ -13,8 +13,8 @@ import random
 
 a = []
 
-count1 = 0 #1의 개수를 세기
-count7 = 0 #7의 개수를 세기
+count1 = 0 
+count7 = 0 
 
 while True:
 	if count1 + count7 == 7: #1이랑 7의 개수가 합쳐서 7개여야 하므로  # count1과 count7의 범위롤 각자 정하지 않아도 된다.

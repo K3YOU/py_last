@@ -11,5 +11,57 @@
 		[ 1, 1, 1, 7, 7, 7, 1]  "당첨"
 '''
 
+import random
+
 lotto = []
 
+count1 = 0 #1의 수 세는 변수
+count7 = 0
+
+count_7 = 0 #7의 수 연속일 때 세는 변수 
+count_1 = 0 
+
+while True :
+	
+	
+	r = random.randint(1,2)
+
+	if r == 1 and count1 <= 4:
+		lotto.append(1)
+		count_1 += 1
+		count_7 =0
+		count1 +=1
+	elif r ==1 and count1 == 4:
+		lotto.append(1)
+		count_1  += 1
+		count_7 = 0
+	
+
+
+	if r ==2 and count7 <= 3:
+		lotto.append(7)
+		count_1 = 0
+		count7 += 1
+		count_7 += 1
+	elif r ==2 and count7 == 3:
+		lotto.append(7)
+		count_1 = 0
+		count_7 += 1
+
+	
+
+	if count_7 == 3:
+		print(lotto," 당첨")
+	else :
+		print(lotto, "실패")
+
+	if count1 +count7 == 7 :
+		break
+	#count1 += 1
+	#count7 += 1			
+
+	
+
+
+
+	

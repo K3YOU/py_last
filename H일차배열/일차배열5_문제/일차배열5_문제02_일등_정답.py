@@ -15,6 +15,9 @@ maxScore = 0
 maxIndex = 0
 
 minScore = 100
+
+
+
 minIndex = 0
 
 for i in range(len(numberList)):
