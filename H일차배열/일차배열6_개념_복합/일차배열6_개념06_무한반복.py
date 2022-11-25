@@ -10,16 +10,28 @@
 import random
 
 a = []
+'''
+count =0
+for i in range(1000):
+    r= random.randint(1,100)
 
-i = 0
+    if r %2 == 1 :
+        a.append(r) 
+        count +=1
+        if count == 5:
+            break
+print(a)
+'''
+
+
+i= 0
 while i < 5:
     r = random.randint(1, 100)
-    # print(r) # 주석을 해제하고 반복문을 실행하면 매번 반복 횟수가 다르다.
+    print(r) # 주석을 해제하고 반복문을 실행하면 매번 반복 횟수가 다르다.
     if r % 2 == 1:
         a.append(r)
         i += 1 # 이 부분이 중요하다. 
     
 print(a)
-
 
 

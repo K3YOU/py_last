@@ -22,16 +22,19 @@ count =[]
 print("candy : " , candy)
 print("count : " , count)
 
+
+
+
 for i in range(len(candy)):
 	person = candy[i] // 25
 	count.append(person)
 	if i < len(candy) - 1:
-		candy[i + 1] += candy[i] % 25
-		candy[i] = 0
-	else:
+		candy[i + 1] += candy[i] % 25 #전에 남은 나머지를 저장하기
+		candy[i] = 0 
+	else: #i >= len(candy) - 1
 		candy[i] = candy[i] % 25
-print(candy)
-print(count)
+print("candy",candy)
+print("count",count)
 
 
 

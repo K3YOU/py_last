@@ -13,18 +13,19 @@ import random
 
 a = [10,34,56,8,43]
 
-r = random.randint(0, len(a))
+r = random.randint(0, len(a)) #len(a) =5
 print(r)
 
-if r == len(a):
-    a.append(100)
-else:
-    a.append(100)
 
-    i = len(a) - 1
-    while i > r:
-        a[i] = a[i - 1]
-        i -= 1
-    a[r] = 100
+if r == len(a):   # r == 5 
+    a.append(100) #제일 뒤에 추가되는 거니깐 4까지인 배열에 5를 적어줘도 된다
+else:
+    a.append(100) # 제일 뒤에 추가되어 있다.
+    
+    i = len(a) - 1 # i== 4 ~ 0
+    while i > r: #if r = 3, 4>3 # 3> 3 -> 불성립 이므로 끝난다. 
+        a[i] = a[i - 1] #a[4] = a[3] => a[4] = 8   ##원래 있던 값을 뒤로 밀어낸다
+        i -= 1 #i = 3
+    a[r] = 100 #a[3] = 100
     
 print(a)

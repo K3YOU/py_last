@@ -16,8 +16,19 @@ avg = 0
 for i in range(len(a)):
 	if i % 2 == 1:
 		total += a[i]
+print(total)
+
+avg=total/(len(a)//2)
+print(avg)
+
+
+'''
+for i in range(len(a)):
+	if i % 2 == 1:
+		total += a[i]
 
 size = len(a) // 2
 avg = total / size
 print("총점 =", total)
 print("평균 =", avg)
+'''

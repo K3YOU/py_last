@@ -20,5 +20,14 @@ for i in range(len(a)):
 
 for i in range(len(b)):
 	c.append(b[i])
+print(c)
+
+'''
+for i in range(len(a)):
+	c.append(a[i])
+
+for i in range(len(b)):
+	c.append(b[i])
 	
 print(c)
+'''

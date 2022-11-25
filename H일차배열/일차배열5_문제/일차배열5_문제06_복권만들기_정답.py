@@ -15,8 +15,11 @@ import random
 
 lotto = []
 
+
+
 count1 = 0
 count7 = 0
+
 
 for i in range(7):
 	if count1 + count7 == 7:
@@ -47,3 +50,4 @@ if count == 3:
 	print("당첨")
 else:
 	print("꽝")
+	

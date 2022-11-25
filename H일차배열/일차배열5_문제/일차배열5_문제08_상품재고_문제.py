@@ -23,19 +23,24 @@
 '''
 item = [1001, 1002, 1003, 1004]
 price =[500, 1200, 4300, 2300]
-count = [3, 1, 2, 1]
+count = [3, 1, 2, 1] #재고
 
 order = [0, 1, 3, 3, 2, 2, 1]
 
 total = 0
 
+#item[i] =item[order[i]] 이런 문제는 이렇게 적으면 안된다.
+
 for i in range(len(order)):
-	if count[order[i]] > 0:
+	if count[order[i]] > 0 :
 		count[order[i]] -= 1
-		print(count)
-	else:
-		print("주문불가")
-print(order)
+		print("order =",order[i],count)
+	else :
+		print("order =",order[i],"주문불가")	
+
+	
+
+
 
 
 
