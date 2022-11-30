@@ -14,10 +14,10 @@ while i <100 : #last는 +6을 할 수 있으니깐
 		first = i
 		
 	i += 1
-#print(first)
+print(first)
 
 last = first + 6
-#print(last)	
+print(last)	
 
 first_result = 100- first
 last_result = last - 100

@@ -77,6 +77,14 @@ a = [1001, 100, 20, 1002, 32, 54, 1003, 34, 65]
 #    0       1   2   3     4   5   6    7    8
 
 sum = 0
+kor = 0
+math = 0
+ 
+
+
+
+'''
+sum = 0
 print("3번문제")
 for i in range(len(a)):
     if i % 3 == 0 :
@@ -88,13 +96,17 @@ for i in range(len(a)):
     if i % 3 == 2 :
         print("수학",a[i])
 print()
-      
+'''
+'''      
 for i in range(len(a)):
     if i % 3 == 0 :
         sum += a[i+1] 
         sum += a[i+2] 
         print(i,sum)
-print("1등학생 :","1003번")
+'''
+
+
+  
         
       
 
