@@ -24,10 +24,10 @@ for i in range(r - 2) :
     print(a + 0 ,  a + 1 , a + 2)
 print("===============================")
 
-print("r : " , r)
-for i in range(r - 2) :
-    num = i + 1
-    for j in range(3) : 
-        print(num + j , end=" ")
+print("r : " , r) #5
+for i in range(r - 2) : #3
+    num = i + 1 #1
+    for j in range(3) : #0,1,2
+        print(num + j , end=" ")  #1,2,3
     print()
 

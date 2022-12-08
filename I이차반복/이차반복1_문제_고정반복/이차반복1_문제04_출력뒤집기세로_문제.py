@@ -14,4 +14,12 @@
 '''
 
 
+import random
+r= random.randint(3,6)
+print(r)
 
+for i  in range (r):
+	a = (3*r)-i
+	for j in range(3):
+		print(a-r*j,end= " ")
+	print()

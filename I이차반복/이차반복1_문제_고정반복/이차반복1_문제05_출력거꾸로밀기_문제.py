@@ -10,5 +10,13 @@
 		5 4 3
 		6 5 4
 '''
+import random
+r= random.randint(3,6)
+print(r) #6
 
+for i in range(r-2): 
+	a = i
+	for j in range(3):
+		print(a-1,end = " ")
+	print()
 

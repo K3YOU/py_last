@@ -22,16 +22,32 @@ import random
 
 r = random.randint(3, 6)
 print(r)
-for i in range(r):
-    a = i + 1
-    print(a + r * 0, a + r * 1 , a + r * 2)
 
-print("----")
 for i in range(r):
-    a = i + 1
-    for j in range(3):
-        print(a +  j * r, end=" ")
-    print()
+	a = i+ 1# 1
+	for j in range(3):
+		print(a+j*r,end= "")
+	
+	print()
+
+
+
+
+
+
+
+
+
+# for i in range(r):
+#     a = i + 1
+#     print(a + r * 0, a + r * 1 , a + r * 2)
+
+# print("----")
+# for i in range(r):
+#     a = i + 1 
+#     for j in range(3):
+#         print(a +  j * r, end=" ")
+#     print()
 
 
 

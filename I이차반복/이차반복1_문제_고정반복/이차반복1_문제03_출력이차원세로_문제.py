@@ -17,3 +17,14 @@
 		1 2 3 
   
 '''
+import random
+
+r = random.randint(3,6)
+print(r)
+for i in range(3):
+	#a = i+1
+	for j in range(r):
+		print(j+1, end= " ")
+	print() 
+
+	

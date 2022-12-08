@@ -22,17 +22,29 @@ import random
 
 r = random.randint(3, 6)
 print(r)
-
+#1차
 for i in range(r):
-    a = i * 3 + 1
-    print(a + 0, a + 1 , a + 2)
+	a = i*3 + 1
+	print(a+0,a+1,a+2)
+print()
+#2차
+for i in range(r): # 3
+	a = i*3 +1 #1 #4
+	for j in range(3):
+		print(a+j,end= " ") #1+0,1+1,1+2 #4+0,4+1,4+2
+	print()
 
-print("----")
-for i in range(r):
-    a = i * 3 + 1
-    for j in range(3):
-        print(a + j, end=" ")
-    print()
+
+# for i in range(r):
+#     a = i * 3 + 1
+#     print(a + 0, a + 1 , a + 2)
+
+# print("----")
+# for i in range(r):
+#     a = i * 3 + 1
+#     for j in range(3):
+#         print(a + j, end=" ")
+#     print()
 
 
 
