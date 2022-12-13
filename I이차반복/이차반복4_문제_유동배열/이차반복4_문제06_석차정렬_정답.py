@@ -10,7 +10,7 @@ scoreList = [87, 42,  11, 98]
 
 for i in range(len(scoreList)):
 	count = 0
-
+	
 	for j in range(len(scoreList)):
 		if scoreList[i] <= scoreList[j]:
 			count += 1

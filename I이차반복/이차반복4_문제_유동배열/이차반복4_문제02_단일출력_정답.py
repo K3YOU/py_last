@@ -7,13 +7,29 @@
 '''
 a = [1,1,2,2,3,3,4,100,3]
 
-for i in range(len(a)):
 
-	check = False
-	for j in range(i + 1):
-		if i != j and a[i] == a[j]:
-			check = True
-			break
-	
-	if check == False:
-		print(a[i], end=" ")
+for i in range(len(a)):
+	check = False          #이걸 여기써야 반복되면서 중복되는 숫자들만 뽑아냄. 위에 쓰면 1 하나만 나옴(하나만 뽑을 때는 위에 쓰면 될 듯..?)
+
+	for j in range(i):
+		if a[i] == a[j] :   #같을 때
+			check = True    #사실이다
+			break			#(그러므로) 멈춰라 ->if 탈출
+	if check == False:      #거짓일 때는
+		print(a[i])         #(다르므로) 프린트해라
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

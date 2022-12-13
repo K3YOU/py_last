@@ -13,6 +13,7 @@ import random
 com = [0, 0, 0]
 me = [0, 0, 0]
 
+#com만들기
 i = 0
 while i < 3:
 	r = random.randint(0, 9)
@@ -29,7 +30,9 @@ while i < 3:
 	i += 1
 print("com =", com)
 
+#me 만들고 strike랑 ball만들기
 while True:
+	#me만들기 (안에 들어와야 무한반복이 안 됨)
 	i = 0
 	while i < 3:
 		r = random.randint(0, 9)

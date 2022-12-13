@@ -25,18 +25,18 @@ a = [11, 87, 42, 100, 24]
 
 count = 0
 while True:
-  index = random.randint(0, len(a) - 1)
-  print("랜덤 :", index)
+  r = random.randint(0, len(a) - 1)
+  print("랜덤 :", r)
 
   max = 0
-  maxIndex = 0
+  maxindex = 0
   for i in range(len(a)):
     if max < a[i]:
       max = a[i]
-      maxIndex = i
+      maxindex = i
   
-  if index == maxIndex:
-    a[index] = 0
+  if r == maxindex:
+    a[r] = 0
     count += 1
   
   print(a)
