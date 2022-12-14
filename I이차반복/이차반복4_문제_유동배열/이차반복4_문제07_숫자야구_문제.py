@@ -8,47 +8,103 @@
 		
 		계속 반복하면서 strike가 3이 되면 종료한다.
 '''
+
+
+
+
 import random
 com = [1, 2, 4]
-print("com",com)
-me = [0, 0, 0]
+me = [0, 0 ,9]
 
 
-meindex = 0
+comindex = 0
 #make me list
-for i in range(100):
-	
-	check = False
-	r = random.randint(0,9)
 
-	for j in range(i):
+a = [1]
+
+for i in range(7):
+	a[i]
+	a[0]a[1]a[2]a[3]a[4]a[5]
+
+
+while True:
+	check = False
+	r = random.randint(0,5)
+	
+
+	for j in range(comindex):
 		if r== com[j]:
 			check = True
 	if check==False :
-		com[meindex] = r
-		meindex += 1
+		com[comindex] = r
+		comindex += 1
 			
-	if meindex == 3:
+	if comindex == 3:
 		break
 
-print("me",com)
+print("com",com)
 
-for i in range(len(com)):
+while(True) :
+	index = 0
+	me = [0, 0 ,0]
+
+	#make me list
+	for i in range(100):
+		
+		check = False
+		r = random.randint(0,5)
+
+		for j in range(len(me)):
+			if r== me[j]:
+				check = True
+		if check==False :
+			me[index] = r
+			index += 1
+				
+		if index == 3:
+			break
+
+	print("me",me)
+
+	#strike and ball counts
 	strike = 0
 	ball = 0
-	# [3] com과 me 를 비교해서 숫자가 같고 자리도 같으면 strike + 1  
-	# [4] com과 me 를 비교해서 숫자가 같고 자리가 틀리면 ball + 1
-	# [5] 사용자에게 strike와 ball 개수를 출력해 보여준다.
-	for j in range(len(com)):
-		if me[i] == com[j] :
-			if i != j :
-				ball += 1
-			else :
+	for i in range (len(com)):
+		for j in range(len(com)):
+			if i == j and com[i] == me[j] :
 				strike += 1
-				if strike == 3:
-					break
+			if i != j and com[i] == me[j] :
+				ball += 1
+	print(strike, ball)
+
+	if strike == 3:
+		break
+
+
+
+
+
 			
-	print(i,"번",strike,ball)			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 '''
 // 빈 배열인 경우 count로 할 수 있다.

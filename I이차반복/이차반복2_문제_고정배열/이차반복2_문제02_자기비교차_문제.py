@@ -13,4 +13,15 @@
 a = [10, 20, 30, 40]
 total = []
 
+for i in range(len(a)):
+	sum = 0
+	sum2 = 0
+	for j in range(len(a)):
+		if i !=j :
+			sum -= a[j]
+		sum2 = a[i] +sum
+	total.append(sum2)
+	print(total)
+print("total:",total)
+
 

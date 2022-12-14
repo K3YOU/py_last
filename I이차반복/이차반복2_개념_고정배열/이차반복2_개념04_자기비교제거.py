@@ -23,5 +23,6 @@ for i in range(len(a)):
         if i != j and a[i] != 0 and a[i] == a[j] :
             a[i] = 0
             a[j] = 0
+	#print(a)
             
 print(a)

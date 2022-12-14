@@ -12,3 +12,14 @@
 		1   : *	
 '''
 
+import random
+
+
+for i in range(5) :#until a
+	r = random.randint(0,10)
+	
+	print(r,":",end=" ")
+
+	for j in range(r) :
+		print("&",end= " ")
+	print()

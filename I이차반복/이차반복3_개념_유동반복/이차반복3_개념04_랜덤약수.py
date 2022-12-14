@@ -11,12 +11,42 @@
         52 : 1 2 4 13 26 52
 '''
 import random
+a=[67, 70, 39, 73, 77]
+# for i in range(5):
+#     r = random.randint(10,100)
+#     a.append(r)
+print(a) #[67, 70, 39, 73, 77]
 
-for i in range(5):
-    r = random.randint(10, 100)
-    print(r, end=" : ")
+for i in range(len(a)): #a를 진행한다
+    share = 1  #share를 여기에 두는게 중요하다
+    
+    for j in range(a[i]) : #a[i]까지 진행한다
+        if a[i] % share == 0 :
+            print(a[i],":", share,end= " ")
+            print()
 
-    for j in range(r):
-        if r % (j + 1) == 0:
-            print(j + 1, end=" ")
+        share += 1
+        if share == a[i]:
+            break
     print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+# for i in range(5):
+#     r = random.randint(10, 100)
+#     print(r, end=" : ")
+
+#     for j in range(r):
+#         if r % (j + 1) == 0:
+#             print(j + 1, end=" ")
+#     print()

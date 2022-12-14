@@ -17,12 +17,17 @@ import random
 
 a = []
 
-for i in range(5):
-	r = random.randint(1, 10)
-	a.append(r)
-print(a)
 
 for i in range(5):
-	for j in range(a[i]):
-		print(a[i], end="")
+	r = random.randint(1,10)
+	a.append(r)
+print(a) #[4, 6, 3, 10, 2]
+
+for i in range(5):  #a배열에서 돌아간다,
+	for j in range(a[i]) : # j는 a[i]만큼 돌아간다.
+		print(a[i],end=" ")
 	print()
+
+
+
+

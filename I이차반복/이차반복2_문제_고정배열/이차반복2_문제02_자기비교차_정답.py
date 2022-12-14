@@ -20,5 +20,6 @@ for i in range(len(a)):
             val += a[j]
     result = a[i] - val
     total.append(result)
+    print(result)
 
 print(total)

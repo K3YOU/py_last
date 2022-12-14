@@ -26,6 +26,24 @@
 '''
 a = [4, 65, 23, 1, 45, 7]
 b = [61, 2, 54, 3, 5, 6]
-정답지 = []
+g = []
 
-철수 = [67, 13, 2, 22, 65, 4]
+chul = [67, 13, 2, 22, 65, 4]
+
+#set a "g"
+for i in range(len(a)):
+	g.append(a[i]+b[i])
+print(g)
+#[65, 67, 77, 4, 50, 13]
+
+print()
+
+#compare chulsoo wiht g
+count = 0
+for i in range(len(g)):
+	#count = 0   여기에 카운트 적으면 i가 늘어날 때 마다 리셋이 된다!!!!!!
+	for j in range(len(chul)):
+		if g[i] == chul[j] :
+			count += 1
+			print(g[i])
+print("count", count)

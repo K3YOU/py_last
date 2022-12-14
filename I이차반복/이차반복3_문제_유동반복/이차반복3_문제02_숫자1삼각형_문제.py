@@ -9,3 +9,17 @@
 		1 2 3 4 5	
 '''
 
+for i in range(5):
+	count = 1
+	for j in range(i+1):
+		#print(i,j)
+		print(count,end= " ")
+		count +=1
+	print()
+
+#####################################################################
+######### 변수 안 쓰고 ###############
+for i in range(5):
+	for j in range(i + 1):
+		print(j + 1, end=" ")
+	print()

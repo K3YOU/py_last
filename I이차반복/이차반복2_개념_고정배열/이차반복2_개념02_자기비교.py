@@ -11,7 +11,13 @@
 a = [10, 54, 90, 20]
 
 for i in range(len(a)):
+	c = 0
 	for j in range(len(a)):
 		if i != j and a[i] <= a[j]: # 본인 인덱스는 제외해야 한다.
-			print(a[j] , end=" ")
-	print()
+		
+			print(a[i],"보다 큰 점수는" ,a[j], "이다" )
+		else: #i == j or a[i] > a[j]   90이 90을 만났을 때 -> 아이인덱스랑 제이인덱스랑 결국 같은 거
+			c += 1
+			#print(a[i],c)
+	if c == len(a):
+		print(a[i],"보다 큰 값은 없다")

@@ -14,5 +14,18 @@
 number = [1001, 1002, 1003, 1004, 1005, 1006]
 score =  [4,    65,   23,   1,    45,   7]
 
-search = [1002, 1004, 1003, 1001, 1005]
+search = [1002, 1004, 1003, 1001,1005]
 
+#number 기준으로 등수가 나옴
+for i in range(len(number)): #search[i] == number[j]
+	for j in range(len(search)):
+		if search[j] == number[i]:
+			print(i,j)
+			print(search[j],":",score[i])
+print()
+#정답 : serach기준으로 등수가 나옴
+for i in range(len(search)): #search[i] == number[j]
+	for j in range(len(number)):
+		if search[i] == number[j]:
+			#print(i,j)
+			print(search[i],":",score[j])
