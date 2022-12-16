@@ -17,25 +17,39 @@ import random
 total = []
 
 for i in range(5):
-
-    result = 0
     count = 0
-    while True:
-        r = random.randint(1, 50)
-
+    sum = 0
+    
+    while(True):
+        r = random.randint(1,50)
         if r % 3 == 0:
-            result += r
-            print(r, end=" ")
+            print(r,end= " ")
+
             count += 1
-        
+            sum += r
         if count == 3:
             break
-    print(" :", result)
+    total.append(sum)
+    print()
+    print("i :",i,total)
 
-    total.append(result)
 
 
-'''
+
+
+
+
+
+
+
+
+
+
+
+print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+
+
+
 for i in range(5):
     count = 0
     t = 0
@@ -49,4 +63,3 @@ for i in range(5):
             break
     total.append(t)
     print(total)
-'''

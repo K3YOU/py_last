@@ -8,3 +8,18 @@
 	 	소수 = 2, 3, 5, 7, 11, 13, 17, 19
 		개수 = 8
 '''
+import random
+r= random.randint(2,100)
+print("r=", r)
+
+i = 1
+count = 0
+while i<=r :
+
+	if r % i == 0 :
+		print(i)
+		count += 1
+	i += 1
+print("count :",count,end= " ")
+
+

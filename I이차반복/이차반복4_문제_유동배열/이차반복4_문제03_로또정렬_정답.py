@@ -26,6 +26,7 @@ while i < 6:
 	if check == False:
 		lotto.append(r)
 		i += 1
+print(lotto)
 	
 i = 0
 while i < len(lotto):

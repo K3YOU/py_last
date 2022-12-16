@@ -14,23 +14,58 @@
 '''
 score = [10, 50, 30, 40, 80, 19]
 
+
 i = 0
-while i < len(score):
+while i <len(score):
+	print(i,score)
 
 	max = score[i]
-	maxIndex = i
+	maxindex = i
 
+	#나 다음부터 끝까지 
 	j = i
 	while j < len(score):
-		if max < score[j]:
+		if (score[j]>max):
 			max = score[j]
-			maxIndex = j
+			maxindex = j
 		j += 1
-		
+	
+	#값 바꾸기 (나를 제일 큰 수로 넣기)
 	temp = score[i]
-	score[i] = score[maxIndex]
-	score[maxIndex] = temp
-
-	i += 1
+	score[i] = score[maxindex]
+	score[maxindex] = temp
+	i += 1 #그리고 제외하기
 
 print(score)
+
+
+
+
+
+
+
+
+
+
+
+
+# i = 0
+# while i < len(score):
+
+# 	max = score[i]
+# 	maxIndex = i
+
+# 	j = i
+# 	while j < len(score):
+# 		if max < score[j]:
+# 			max = score[j]
+# 			maxIndex = j
+# 		j += 1
+		
+# 	temp = score[i]
+# 	score[i] = score[maxIndex]
+# 	score[maxIndex] = temp
+
+# 	i += 1
+
+# print(score)

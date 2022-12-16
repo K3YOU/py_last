@@ -11,28 +11,95 @@ lotto = []
 import random
 
 #중복없이 넣기
-for i in range(6):
-	check = False
-	r = random.randint(1,45)
-	lotto.append(r)
-	
-	for j in range(i):
-		if(lotto[i]==lotto[j]):
-			check == True
-			break
 
-#큰수부터 정렬하기
-for i in range(len(lotto)):
-	index = i
-	max = lotto[i]
-	for j in range(len(lotto)-i):
-		if max< lotto[j+i]:
-			
-			
-			max = lotto[j+i]
-			index = j
-	temp = lotto[index]
-	lotto[index] = lotto[i]
-	lotto[i] = temp
+i = 0
+while i<6 :
+	r =random.randint(1,10)
+
+	check = False
+	for j in range(i):
+		if r== lotto[j] :
+			check = True
+			break
+	if check == False :
+		lotto.append(r)
+		i += 1    #중복이 아닐 때만 i가 증가되게 할 것
 
 print(lotto)
+
+
+
+
+# i = 0
+# while i < 6:
+# 	r = random.randint(1, 45)
+
+# 	check = False
+
+# 	j = 0
+# 	while j < i: 
+# 		if r == lotto[j]:
+# 			check = True
+# 			break # if check == flase 로 감
+# 		j += 1 
+	
+# 	if check == False:
+# 		lotto.append(r)
+# 		i += 1    
+# print(lotto)
+	
+
+
+#큰수부터 정렬하기
+
+	#for문 쓰면 안된다. ->최대값만 계속 나옴 -> 이미 나온 최대값은 제외시키고 다시 최대값을 뽑는 것에 위배된다.
+	# for i in range(len(lotto)):
+	# 	max = lotto[i]
+	# 	maxindex = i
+	# 	for j in range(len(lotto)):
+	# 		if lotto[i] <lotto[j] :
+	# 			max = lotto[j]
+	# 			maxindex = j
+	# 	temp = lotto[i]
+	# 	lotto[i] = lotto[maxindex]
+	# 	lotto[maxindex] = lotto[i]
+	# print("dfaf",lotto)		
+
+	#while을 써야한다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# i = 0
+# while i <len(lotto):
+# 	print(i,lotto)
+
+# 	max = lotto[i]
+# 	maxindex = i
+
+# 	#나 다음부터 끝까지 
+# 	j = i
+# 	while j < len(lotto):
+# 		if (lotto[j]>max):
+# 			max = lotto[j]
+# 			maxindex = j
+# 		j += 1
+	
+# 	#값 바꾸기 (나를 제일 큰 수로 넣기)
+# 	temp = lotto[i]
+# 	lotto[i] = lotto[maxindex]
+# 	lotto[maxindex] = temp
+# 	i += 1 #그리고 제외하기
+
+#print(lotto)
+

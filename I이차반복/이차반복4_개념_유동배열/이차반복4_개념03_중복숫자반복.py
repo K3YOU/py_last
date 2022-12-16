@@ -9,6 +9,26 @@
 import random
 
 a = []
+# count = 0
+
+# while True :
+# 	r= random.randint(1,4)
+# 	#print(r,end= " ")
+# 	check = False    #틀린거를 출력해라
+
+# 	for j in range(len(a)):
+# 		if a[j] == r :   #같으면 
+# 			check = True   # 맞다.
+# 			break          #맞으면 빠져나와
+# 	if check == False :  #틀리면
+# 						#다르다
+# 		a.append(r) #출력을 해야하니깐 다르면, 하나 넣고
+# 		count += 1
+# 	if count == 4:
+# 		break
+# print(a)
+
+
 
 count = 0
 while True:
