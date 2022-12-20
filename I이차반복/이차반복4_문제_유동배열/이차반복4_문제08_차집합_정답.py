@@ -18,6 +18,7 @@ for i in range(10):
 	
 	if check == False:
 		temp.append(a[i])
+print("temp-first:",temp)
 
 for i in range(10):
 	check = False

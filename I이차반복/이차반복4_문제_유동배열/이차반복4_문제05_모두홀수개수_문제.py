@@ -13,23 +13,23 @@
 import random
 total = []
 
+for i in range(5):
 
-for j in range (5) :
-	count = 0  #돌 때 마다 리셋    
-	a = []
-	for i in range(4):
+	count = 0
+
+	for j in range(4):
 		r = random.randint(1,9)
-		a.append(r)
-		if r % 2 != 0 :
-			count +=1
-			
-		# else :
-		# 	count = 0
-	
-	if count == 4:
-		total.append(1)
-	else :
-		total.append(2)
+		
+		if r % 2 != 0:
+			count += 1
+		
+		print(r,end= " ")
 
-	print(j,a)
-print(total, end = " ")
+
+	if count == 4 :
+		total.append(1)
+		
+	else :
+		total.append(2) 
+
+	print(total)

@@ -24,7 +24,7 @@ a = [1]
 
 for i in range(7):
 	a[i]
-	a[0]a[1]a[2]a[3]a[4]a[5]
+	# a[0]a[1]a[2]a[3]a[4]a[5]
 
 
 while True:

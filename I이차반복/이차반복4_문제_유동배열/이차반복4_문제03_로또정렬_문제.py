@@ -14,43 +14,55 @@ import random
 
 i = 0
 while i<6 :
-	r =random.randint(1,10)
+	r = random.randint(1,45)
 
-	check = False
-	for j in range(i):
-		if r== lotto[j] :
-			check = True
+	check = False 
+	j = 0
+
+	#중복이면
+	while j<i :
+		if r == lotto[j]:
+	#사실이다
+			check == True
+	#사실이면 빠져나오기
 			break
-	if check == False :
-		lotto.append(r)
-		i += 1    #중복이 아닐 때만 i가 증가되게 할 것
+		j += 1
 
+	#거짓이면
+	if check == False:
+	#다르다(추가)
+		lotto.append(r)
+		i += 1
+print(lotto)
+
+#큰수부터 정렬하기
+i = 0
+while i <len(lotto):
+	max = lotto[i]
+	maxindex = i
+
+	j = i
+	while j < len(lotto) :  # 1:n
+		if max <lotto[j]:
+			max = lotto[j]
+			maxindex = j
+		j += 1
+
+	temp = lotto[i]
+	lotto[i] = lotto[maxindex]
+	lotto[maxindex] = temp
+	
+	i += 1
+print("내림차순정렬")
 print(lotto)
 
 
 
 
-# i = 0
-# while i < 6:
-# 	r = random.randint(1, 45)
 
-# 	check = False
-
-# 	j = 0
-# 	while j < i: 
-# 		if r == lotto[j]:
-# 			check = True
-# 			break # if check == flase 로 감
-# 		j += 1 
-	
-# 	if check == False:
-# 		lotto.append(r)
-# 		i += 1    
-# print(lotto)
 	
 
 
-#큰수부터 정렬하기
 
 	#for문 쓰면 안된다. ->최대값만 계속 나옴 -> 이미 나온 최대값은 제외시키고 다시 최대값을 뽑는 것에 위배된다.
 	# for i in range(len(lotto)):
