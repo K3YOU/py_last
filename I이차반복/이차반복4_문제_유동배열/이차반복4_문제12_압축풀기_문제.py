@@ -13,7 +13,12 @@
         b = [3,3,3,3,3,5,5,5,5,5,5,2,4,4,4]
 '''
 a = [3,5,2,4]
-count = [5,6,1,3]
+count = [5,6,1,3] #개수
 
 b = []
+
+for i in range(len(a)):
+    for j in range(count[i]):
+        b.append(a[i])
+print(b)
 

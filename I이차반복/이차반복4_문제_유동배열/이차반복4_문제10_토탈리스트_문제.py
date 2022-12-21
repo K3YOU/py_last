@@ -16,3 +16,22 @@
 		total = [26, 24, 23, 33, 13, 21, 27, 17, 23, 29]
 '''
 total = []
+
+
+#숫자 5개 뽑가 -> 다 더하기 -> 더한 값 토탈에 넣기 -> 총 10개 토탈에 넣기
+
+import random
+
+i = 0 
+while i < 10 :
+	sum = 0
+	for j in range(5):
+		r = random.randint(1,9)
+		# print(r,end= " ")
+		sum += r
+	total.append(sum)
+	i += 1
+# print()	
+print(total)
+
+

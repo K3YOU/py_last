@@ -11,11 +11,11 @@ import random
 
 a = [0,0,0]
 
-while True:
+while True: # total까지 해서 20이 아니면 처음부터 다시!
 	i = 0
 	while i < 3:
 		r = random.randint(1, 10)
-
+		print("r:",r)
 		check = False
 		j = 0
 		while j < i:
@@ -31,7 +31,8 @@ while True:
 	total = 0
 	for i in range(3):
 		total += a[i]
-	
+		print("total:",total)
+
 	if total == 20:
 		break
 
