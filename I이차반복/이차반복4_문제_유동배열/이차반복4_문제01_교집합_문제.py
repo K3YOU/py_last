@@ -11,7 +11,7 @@ b = [40, 30, 20, 50]
 total = []
 
 for i in range(len(a)):
-	for j in range(len(b)):
-		if a[i] == b[j]:
+	for j in range(len(a)):
+		if (a[i] == b[j]):
 			total.append(a[i])
 print(total)

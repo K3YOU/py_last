@@ -17,6 +17,26 @@
 a = [43,55,65,11]
 count = []
 
+
+for i in range(len(a)):
+	val = 0
+	for j in range(a[i]):
+		if (a[i] % (j+1)== 0) :
+			print((j+1),end= " ")
+			
+			val += 1
+	count.append(val)
+	print()
+print(count)
+
+
+
+
+print("////////////////////위에거에 중복되서 나옴 /////////////////////////")
+
+
+
+
 for i in range(len(a)):
 	val = 0
 	for j in range(a[i]):   #a[i]인 이유 : 43의 약수의 개수를 구해야하므로
@@ -44,19 +64,3 @@ print(count)
 
 
 
-
-# a = [43,55,65,11]
-# count = []
-
-# for i in range(len(a)):
-
-# 	val = 0
-# 	for j in range(a[i]):
-# 		if a[i] % (j + 1) == 0:
-# 			print(j + 1, end=" ")
-# 			val += 1
-# 	print()
-
-# 	count.append(val)
-
-# print("count",count)

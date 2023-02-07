@@ -19,19 +19,52 @@ total = []
 for i in range(5):
     count = 0
     sum = 0
-    
-    while(True):
+
+    while (True):
         r = random.randint(1,50)
         if r % 3 == 0:
             print(r,end= " ")
-
-            count += 1
+            
             sum += r
-        if count == 3:
-            break
+            count += 1
+            if count == 3:
+                break
     total.append(sum)
-    print()
-    print("i :",i,total)
+    print( ":", sum)
+print()
+print(total)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# for i in range(5):
+#     count = 0
+#     sum = 0
+    
+#     while(True):
+#         r = random.randint(1,50)
+#         if r % 3 == 0:
+#             print(r,end= " ")
+
+#             count += 1
+#             sum += r
+#         if count == 3:
+#             break
+#     total.append(sum)
+#     print()
+#     print("i :",i,total)
 
 
 
@@ -50,16 +83,16 @@ print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
 
 
-for i in range(5):
-    count = 0
-    t = 0
-    while True:
-        r = random.randint(1,50)
-        if r % 3 == 0:
-            print(r , end=" ")
-            t += r
-            count += 1
-        if count == 3:
-            break
-    total.append(t)
-    print(total)
+# for i in range(5):
+#     count = 0
+#     t = 0
+#     while True:
+#         r = random.randint(1,50)
+#         if r % 3 == 0:
+#             print(r , end=" ")
+#             t += r
+#             count += 1
+#         if count == 3:
+#             break
+#     total.append(t)
+#     print(total)
