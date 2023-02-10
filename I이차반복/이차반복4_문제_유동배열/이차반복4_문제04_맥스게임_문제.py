@@ -24,35 +24,65 @@ import random
 a = [11, 87, 42, 100, 24]
 
 
-  #랜덤숫자뽑기
-count = 0
-while (True):
-  r = random.randint(0,4)
-  print(r)
-
-  max = 0
-  maxindex = 0
-
-  #랜덤값이 최대값이면 그 자리를 0으로 바꾸기
-  ##최대 값을 먼저 찾기
-  for i in range(len(a)):
-    if max<a[i] :
-      max = a[i]
-      maxindex = i
+#2/10
+print(a)
 
 
-  ##0으로 바꿔주기
 
-  if r == maxindex :
-    a[r] = 0
-    count += 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#   #랜덤숫자뽑기
+# count = 0
+# while (True):
+#   r = random.randint(0,4)
+#   print(r)
+
+#   max = 0
+#   maxindex = 0
+
+#   #랜덤값이 최대값이면 그 자리를 0으로 바꾸기
+#   ##최대 값을 먼저 찾기
+#   for i in range(len(a)):
+#     if max<a[i] :
+#       max = a[i]
+#       maxindex = i
+
+
+#   ##0으로 바꿔주기
+
+#   if r == maxindex :
+#     a[r] = 0
+#     count += 1
 
     
-  print(a)
-  print()
+#   print(a)
+#   print()
 
-  if count == len(a):
-    break
+#   if count == len(a):
+#     break
 
 
 

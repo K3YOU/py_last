@@ -10,52 +10,103 @@ lotto = []
 
 import random
 
-#중복없이 넣기
+# 2/ 10 
 
+#중복없이 넣기
 i = 0
-while i<6 :
+while i < 6 :
+	#뽑고
 	r = random.randint(1,45)
 
-	check = False 
-	j = 0
-
-	#중복이면
-	while j<i :
-		if r == lotto[j]:
-	#사실이다
-			check == True
-	#사실이면 빠져나오기
+	check = False
+		
+	j = 0       # j = 0인 이유 : 처음부터 나까지
+	while j <i:  
+		if ( r == lotto[j]):
+			check = True
 			break
 		j += 1
 
-	#거짓이면
-	if check == False:
-	#다르다(추가)
+	if check == False :
 		lotto.append(r)
-		i += 1
-print(lotto)
+		i += 1   # 여기에 있어야 중복이면 i가 증가가 안된다.
+print("중복없이 6개 : ",lotto)
+print()
 
-#큰수부터 정렬하기
+#내림차순정렬
+print(  )
+
+
 i = 0
-while i <len(lotto):
-	max = lotto[i]
-	maxindex = i
+while i < len(lotto):
 
-	j = i
-	while j < len(lotto) :  # 1:n
-		if max <lotto[j]:
-			max = lotto[j]
-			maxindex = j
-		j += 1
+    max = lotto[i]
+    maxIndex = i
 
-	temp = lotto[i]
-	lotto[i] = lotto[maxindex]
-	lotto[maxindex] = temp
+    j = i
+    while j < len(lotto):
+        if max < lotto[j]:
+            max = lotto[j]
+            maxIndex = j
+        j += 1
+    
+    temp = lotto[i]
+    lotto[i] = lotto[maxIndex]
+    lotto[maxIndex] = temp
+
+    i += 1
+
+
+print("내림차순 정렬", lotto)
+
+
+
+# #중복없이 넣기
+
+# i = 0
+# while i<6 :
+# 	r = random.randint(1,45)
+
+# 	check = False 
+# 	j = 0
+
+# 	#중복이면
+# 	while j<i :
+# 		if r == lotto[j]:
+# 	#사실이다
+# 			check == True
+# 	#사실이면 빠져나오기
+# 			break
+# 		j += 1
+
+# 	#거짓이면
+# 	if check == False:
+# 	#다르다(추가)
+# 		lotto.append(r)
+# 		i += 1
+# print(lotto)
+
+# #큰수부터 정렬하기
+# i = 0
+# while i <len(lotto):
+# 	max = lotto[i]
+# 	maxindex = i
+
+# 	j = i
+# 	while j < len(lotto) :  # 1:n
+# 		if max <lotto[j]:
+# 			max = lotto[j]
+# 			maxindex = j
+# 		j += 1
+
+# 	temp = lotto[i]
+# 	lotto[i] = lotto[maxindex]
+# 	lotto[maxindex] = temp
 	
-	i += 1
-print("내림차순정렬")
-print(lotto)
-
+# 	i += 1
+# print("내림차순정렬")
+# print(lotto)
+ 
 
 
 
