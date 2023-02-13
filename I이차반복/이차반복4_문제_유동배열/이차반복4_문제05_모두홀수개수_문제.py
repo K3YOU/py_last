@@ -13,23 +13,47 @@
 import random
 total = []
 
-for i in range(5):
 
+# 2/ 10
+
+for i in range(5) :
 	count = 0
 
 	for j in range(4):
 		r = random.randint(1,9)
 		
-		if r % 2 != 0:
+		if r % 2 != 0 :
 			count += 1
 		
-		print(r,end= " ")
+		print("r :", r)
 
-
-	if count == 4 :
+	if count == 4:
 		total.append(1)
-		
 	else :
-		total.append(2) 
+		total.append(2)
+print("total :", total)
 
-	print(total)
+
+
+
+
+
+
+
+\
+# 	for j in range(4):
+# 		r = random.randint(1,9)
+		
+# 		if r % 2 != 0:
+# 			count += 1
+		
+# 		print(r,end= " ")
+
+
+# 	if count == 4 :
+# 		total.append(1)
+		
+# 	else :
+# 		total.append(2) 
+
+# 	print(total)

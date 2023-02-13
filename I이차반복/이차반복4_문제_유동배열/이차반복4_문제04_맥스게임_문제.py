@@ -24,33 +24,37 @@ import random
 a = [11, 87, 42, 100, 24]
 
 
-#2/10
-print(a)
+#2/13
 
 
+#   #랜덤숫자뽑기
+count = 0
+while True :
+  r = random.randint(0,4)
+  print("random num :", r)
+
+  max = 0
+  maxindex = 0
+
+#   #랜덤값이 최대값이면 그 자리를 0으로 바꾸기
+#   ##최대 값을 먼저 찾기
+  for i in range(len(a)):
+    if(max < a[i]) : #0으로 지정된 최대값과 최대인덱스를 특정 수들로 바꿔줘야함
+      max = a[i]
+      maxindex = i   #최대인덱스가 특정값일 경우, 그 값이 r일 경우 
 
 
+#   ##0으로 바꿔주기   <-- 내가 헷갈리는 부분 : r은 배열 안의 숫자가 아닌 인덱스 넘버라서
 
+  if maxindex == r:
+    a[r]  = 0
+    count += 1
 
+  print(a)
+  print() 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  if count == len(a):
+    break
 
 
 
