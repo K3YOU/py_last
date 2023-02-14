@@ -42,6 +42,8 @@ import random
 
 
 
+
+
 #2/14
 # for i in range(5) :#until a
 # 	r = random.randint(0,10)

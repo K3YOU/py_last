@@ -17,8 +17,22 @@ import random
 r = random.randint(2,100)
 print("r =",r)
 
-for i in range(r):
+for i in range(r+1): # 2  
+	if i <=1:
+		continue
+
+	count = 0
+	for j in range(i + 1):# 1부터
 	
+		if j <= 0:
+			continue
+		else :
+			if i % j == 0 :
+				count += 1
+			
+	if count == 2:
+		print(i ,end=" ")
+
 
 
 
@@ -57,11 +71,11 @@ for i in range(r):
 # 	i = 2+z #소수로 나올 수
 
 # 	count = 0  #count == 2 소수로 출력된ㄱ
-# 	share = 1 #몫
-# 	while share <= i:
-# 		if i % share == 0 :
+# 	 = 1 #몫
+# 	while  <= i:
+# 		if i %  == 0 :
 # 			count += 1
-# 		share += 1
+# 		 += 1
 
 # 	if count == 2:
 # 		print(i,end= " ")
