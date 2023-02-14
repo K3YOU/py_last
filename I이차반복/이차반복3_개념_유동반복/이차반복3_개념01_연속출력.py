@@ -17,16 +17,42 @@ import random
 
 a = []
 
-
-for i in range(5):
+# 2/ 14  : 큰 어려움없이 풀었다
+for i in range(5) :
 	r = random.randint(1,10)
-	a.append(r)
-print(a) #[4, 6, 3, 10, 2]
-
-for i in range(5):  #a배열에서 돌아간다,
-	for j in range(a[i]) : # j는 a[i]만큼 돌아간다.
-		print(a[i],end=" ")
+	for j in range(r):
+		print(r,end= " ")
 	print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# for i in range(5):
+# 	r = random.randint(1,10)
+# 	a.append(r)
+# print(a) #[4, 6, 3, 10, 2]
+
+# for i in range(5):  #a배열에서 돌아간다,
+# 	for j in range(a[i]) : # j는 a[i]만큼 돌아간다.
+# 		print(a[i],end=" ")
+# 	print()
 
 
 

@@ -13,27 +13,60 @@
 '''
 import random
 
-r = random.randint(2, 100)
-r = 19
-print("r =", r)
+#2/14
+r = random.randint(2,100)
+print("r =",r)
+
+for i in range(r):
+	
 
 
-################## for문 #######################
 
-for z in range (r-1):
-	i = 2+z #소수로 나올 수
 
-	count = 0  #count == 2 소수로 출력된ㄱ
-	share = 1 #몫
-	while share <= i:
-		if i % share == 0 :
-			count += 1
-		share += 1
 
-	if count == 2:
-		print(i,end= " ")
-	#i += 1  : z로 커진다
-	#if i ==r : i 항상 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# r = random.randint(2, 100)
+# r = 19
+# print("r =", r)
+
+
+# ################## for문 #######################
+
+# for z in range (r-1):
+# 	i = 2+z #소수로 나올 수
+
+# 	count = 0  #count == 2 소수로 출력된ㄱ
+# 	share = 1 #몫
+# 	while share <= i:
+# 		if i % share == 0 :
+# 			count += 1
+# 		share += 1
+
+# 	if count == 2:
+# 		print(i,end= " ")
+# 	#i += 1  : z로 커진다
+# 	#if i ==r : i 항상 2
 	
 
 
