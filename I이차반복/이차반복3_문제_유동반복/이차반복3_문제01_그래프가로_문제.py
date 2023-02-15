@@ -11,9 +11,27 @@
 		0   : 
 		1   : *	
 '''
+#2/15 : 푸는 방법을 먼저 생각하고 접근하기
+
+#1. 필요한 변수 생각
+# r : range
+# i : 랜덤 숫자들
+# j : 별 
+
+
 
 import random
 
+# five random numbers 
+for i in range( 5):
+	r = random.randint(0,10)
+	print("randome : ",r,":",end= " ")
+	for j in range(r):
+		print("*",end= " ")
+	print()
+		
+
+		
 
 
 

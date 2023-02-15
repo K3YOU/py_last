@@ -12,7 +12,7 @@
 '''
 
 for i in range(7):
-	num = 7 - i
+	num = 7 - i 
 	for j in range(i + 1):
 		print(num, end=" ")
 		num += 1
