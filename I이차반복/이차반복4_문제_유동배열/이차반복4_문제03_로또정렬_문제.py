@@ -5,10 +5,47 @@
 		내림차순 정렬 후 출력하시오.
 	[예시]
         [40, 38, 27, 26, 18, 5]
+
+		r = 40
+
+		r =30 : 1
+
+		r =20 : 2
+
+		r = 10 : 3
+
+		r = 32 : 4
+
+		r = 41 : 5
 '''
 lotto = []
 
 import random
+
+i = 0
+while i < 6 :
+	r = random.randint(1,45)
+	c = 0
+	for j in range(i):
+		if lotto[j] != r :
+			c += 1
+	if c == i:
+		lotto.append(r)
+		i += 1
+	
+print("/////////////////////////////////////////////")
+print(lotto)	
+
+
+
+
+
+
+print("/////////////////////////////////////////////")
+
+
+
+
 
 # 2/ 10 
 
@@ -27,7 +64,7 @@ while i < 6 :
 			break
 		j += 1
 
-	if check == False :
+	if check == False : #없는거는 끝나야 알 수 있음
 		lotto.append(r)
 		i += 1   # 여기에 있어야 중복이면 i가 증가가 안된다.
 print("중복없이 6개 : ",lotto)
